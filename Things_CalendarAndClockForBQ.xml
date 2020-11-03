@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><Entities build="b12" majorVersion="8" minorVersion="5" modelPersistenceProviderPackage="PostgresPersistenceProviderPackage" revision="0" schemaVersion="1050" universal=""><Things><Thing description="" documentationContent="" effectiveThingPackage="ConfiguredThing" enabled="true" homeMashup="" identifier="" lastModifiedDate="2020-05-05T07:00:27.926Z" name="CalendarAndClockForBQ" projectName="DigitalBoardroom" published="false" tags="" thingTemplate="GenericThing" valueStream=""><Owner name="Administrator" type="User"/><avatar/><DesignTimePermissions><Create/><Read/><Update/><Delete/><Metadata/></DesignTimePermissions><RunTimePermissions/><VisibilityPermissions><Visibility/></VisibilityPermissions><ConfigurationTableDefinitions/><ConfigurationTables/><ThingShape><PropertyDefinitions><PropertyDefinition aspect.cacheTime="0.0" aspect.dataChangeType="VALUE" aspect.isPersistent="true" baseType="DATETIME" category="" description="" isLocalOnly="false" name="P8_chartLastEnd" ordinal="4"/><PropertyDefinition aspect.cacheTime="0.0" aspect.dataChangeType="VALUE" aspect.isPersistent="true" baseType="DATETIME" category="" description="" isLocalOnly="false" name="P8_chartLastStart" ordinal="3"/><PropertyDefinition aspect.cacheTime="0.0" aspect.dataChangeType="VALUE" aspect.defaultValue="32" aspect.isPersistent="true" baseType="INTEGER" category="" description="" isLocalOnly="false" name="P8_chartTimePeriodHR" ordinal="2"/></PropertyDefinitions><ServiceDefinitions><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="Forward1week"><ResultType aspect.dataShape="chartTimeFrame" baseType="NOTHING" description="" name="result" ordinal="0"/><ParameterDefinitions/></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="Forward32H"><ResultType aspect.dataShape="chartTimeFrame" baseType="NOTHING" description="" name="result" ordinal="0"/><ParameterDefinitions/></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="Forward8H"><ResultType aspect.dataShape="chartTimeFrame" baseType="NOTHING" description="" name="result" ordinal="0"/><ParameterDefinitions/></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="InitializeTime"><ResultType aspect.dataShape="chartTimeFrame" baseType="NOTHING" description="" name="result" ordinal="0"/><ParameterDefinitions/></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="InitializeTimeFor1Month"><ResultType baseType="NOTHING" description="" name="result" ordinal="0"/><ParameterDefinitions/></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="OutputModule"><ResultType aspect.dataShape="chartTimeFrameForBQ" baseType="INFOTABLE" description="" name="result" ordinal="0"/><ParameterDefinitions/></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="Prev1week"><ResultType aspect.dataShape="chartTimeFrame" baseType="NOTHING" description="" name="result" ordinal="0"/><ParameterDefinitions/></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="Prev32H"><ResultType aspect.dataShape="chartTimeFrame" baseType="NOTHING" description="" name="result" ordinal="0"/><ParameterDefinitions/></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="Prev8H"><ResultType aspect.dataShape="chartTimeFrame" baseType="NOTHING" description="" name="result" ordinal="0"/><ParameterDefinitions/></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="updateDateTimePickerLeft"><ResultType baseType="NOTHING" description="" name="result" ordinal="0"/><ParameterDefinitions><FieldDefinition baseType="DATETIME" description="" name="DateTimePickerLeft" ordinal="1"/></ParameterDefinitions></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="updateDateTimePickerRight"><ResultType baseType="NOTHING" description="" name="result" ordinal="0"/><ParameterDefinitions><FieldDefinition baseType="DATETIME" description="" name="DateTimePickerLeft" ordinal="1"/></ParameterDefinitions></ServiceDefinition></ServiceDefinitions><EventDefinitions/><ServiceMappings/><ServiceImplementations><ServiceImplementation description="" handlerName="Script" name="Forward1week"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[//var result=Math.floor((new Date().getTime()/1000 - me.P8_chartLastEnd.getTime()/1000)/3600); //  works! result = 0.2525825
+//source: https://www.epochconverter.com/
+
+var BaseInterval = 24*7; //1 week
+var forwardInterval = 24*7;
+
+if(   Math.floor(         (new Date().getTime()/1000.0 - me.P8_chartLastEnd.getTime()/1000.0   )   /3600   )  >BaseInterval  ){ 
+    //if diff >8H. direct add 8H
+    var tempEnd = me.P8_chartLastEnd;
+    tempEnd.setHours(tempEnd.getHours()+forwardInterval);
+    me.P8_chartLastEnd=tempEnd;
+   // result.end=me.P8_chartLastEnd;
+    
+    var tempStart = tempEnd;  
+    tempStart.setHours(tempStart.getHours()-BaseInterval);
+    me.P8_chartLastStart=tempStart;
+    //result.start= tempStart;
+}else{
+    //if diff <8H. Set now to end time,  start time=now-8H 
+	me.P8_chartLastEnd=new Date();
+    //result.end=me.P8_chartLastEnd;
+    
+    var temp=me.P8_chartLastEnd;
+    temp.setHours(temp.getHours()-BaseInterval);
+    me.P8_chartLastStart=temp;
+    //result.start=me.P8_chartLastStart;
+    
+    
+}
+
+//var params = {
+//    infoTableName : "InfoTable",
+//    dataShapeName : "chartTimeFrame"
+//};
+//
+//// CreateInfoTableFromDataShape(infoTableName:STRING("InfoTable"), dataShapeName:STRING):INFOTABLE(chartTimeFrame)
+//var result = Resources["InfoTableFunctions"].CreateInfoTableFromDataShape(params);
+//
+
+
+
+
+//difference works!  result = 2
+//var d1 = new Date();
+//var d2 = new Date();
+//d1.setHours(d1.getHours()-2);
+//var result=(d2.getTime()-d1.getTime())/ (60*60*1000);]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="Forward32H"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[//var result=Math.floor((new Date().getTime()/1000 - me.P8_chartLastEnd.getTime()/1000)/3600); //  works! result = 0.2525825
+//source: https://www.epochconverter.com/
+
+var BaseInterval = 24;
+var forwardInterval = 24;
+
+if(   Math.floor(         (new Date().getTime()/1000.0 - me.P8_chartLastEnd.getTime()/1000.0   )   /3600   )  >BaseInterval  ){ 
+    //if diff >8H. direct add 8H
+    var tempEnd = me.P8_chartLastEnd;
+    tempEnd.setHours(tempEnd.getHours()+forwardInterval);
+    me.P8_chartLastEnd=tempEnd;
+   // result.end=me.P8_chartLastEnd;
+    
+    var tempStart = tempEnd;  
+    tempStart.setHours(tempStart.getHours()-BaseInterval);
+    me.P8_chartLastStart=tempStart;
+    //result.start= tempStart;
+}else{
+    //if diff <8H. Set now to end time,  start time=now-8H 
+	me.P8_chartLastEnd=new Date();
+    //result.end=me.P8_chartLastEnd;
+    
+    var temp=me.P8_chartLastEnd;
+    temp.setHours(temp.getHours()-BaseInterval);
+    me.P8_chartLastStart=temp;
+    //result.start=me.P8_chartLastStart;
+    
+    
+}
+
+//var params = {
+//    infoTableName : "InfoTable",
+//    dataShapeName : "chartTimeFrame"
+//};
+//
+//// CreateInfoTableFromDataShape(infoTableName:STRING("InfoTable"), dataShapeName:STRING):INFOTABLE(chartTimeFrame)
+//var result = Resources["InfoTableFunctions"].CreateInfoTableFromDataShape(params);
+//
+
+
+
+
+//difference works!  result = 2
+//var d1 = new Date();
+//var d2 = new Date();
+//d1.setHours(d1.getHours()-2);
+//var result=(d2.getTime()-d1.getTime())/ (60*60*1000);]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="Forward8H"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[//var result=Math.floor((new Date().getTime()/1000 - me.P8_chartLastEnd.getTime()/1000)/3600); //  works! result = 0.2525825
+//source: https://www.epochconverter.com/
+
+if(   Math.floor(         (new Date().getTime()/1000.0 - me.P8_chartLastEnd.getTime()/1000.0   )   /3600   )  >8  ){ 
+    //if diff >8H. direct add 8H
+    var tempEnd = me.P8_chartLastEnd;
+    tempEnd.setHours(tempEnd.getHours()+8);
+    me.P8_chartLastEnd=tempEnd;
+   // result.end=me.P8_chartLastEnd;
+    
+    var tempStart = tempEnd;  
+    tempStart.setHours(tempStart.getHours()-32);
+    me.P8_chartLastStart=tempStart;
+    //result.start= tempStart;
+}else{
+    //if diff <8H. Set now to end time,  start time=now-8H 
+	me.P8_chartLastEnd=new Date();
+    //result.end=me.P8_chartLastEnd;
+    
+    var temp=me.P8_chartLastEnd;
+    temp.setHours(temp.getHours()-32);
+    me.P8_chartLastStart=temp;
+    //result.start=me.P8_chartLastStart;
+    
+    
+}
+
+//var params = {
+//    infoTableName : "InfoTable",
+//    dataShapeName : "chartTimeFrame"
+//};
+//
+//// CreateInfoTableFromDataShape(infoTableName:STRING("InfoTable"), dataShapeName:STRING):INFOTABLE(chartTimeFrame)
+//var result = Resources["InfoTableFunctions"].CreateInfoTableFromDataShape(params);
+//
+
+
+
+
+//difference works!  result = 2
+//var d1 = new Date();
+//var d2 = new Date();
+//d1.setHours(d1.getHours()-2);
+//var result=(d2.getTime()-d1.getTime())/ (60*60*1000);]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="InitializeTime"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[var params = {
+    infoTableName : "InfoTable",
+    dataShapeName : "chartTimeFrame"
+};
+
+// CreateInfoTableFromDataShape(infoTableName:STRING("InfoTable"), dataShapeName:STRING):INFOTABLE(chartTimeFrame)
+var result = Resources["InfoTableFunctions"].CreateInfoTableFromDataShape(params);
+
+
+if(me.P8_chartLastStart!==new Date() || me.P8_chartLastStart===undefined){// compare successfully!
+	var d= new Date();
+    me.P8_chartLastEnd=d;
+    //result = me.P8_chartLastEnd;
+	d.setHours(d.getHours()-32);
+    me.P8_chartLastStart = d;
+    //result = me.P8_chartLastStart;
+
+}
+
+
+
+]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="InitializeTimeFor1Month"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[var params = {
+    infoTableName : "InfoTable",
+    dataShapeName : "chartTimeFrameForBQ"
+};
+
+// CreateInfoTableFromDataShape(infoTableName:STRING("InfoTable"), dataShapeName:STRING):INFOTABLE(chartTimeFrame)
+var result = Resources["InfoTableFunctions"].CreateInfoTableFromDataShape(params);
+
+
+if(me.P8_chartLastStart!==new Date() || me.P8_chartLastStart===undefined){// compare successfully!
+	var d= new Date();
+    me.P8_chartLastEnd=d;
+    //result = me.P8_chartLastEnd;
+	d.setHours(d.getHours()-24*31);
+    me.P8_chartLastStart = d;
+    //result = me.P8_chartLastStart;
+
+}
+]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="OutputModule"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[var params = {
+    infoTableName : "InfoTable",
+    dataShapeName : "chartTimeFrameForBQ"
+};
+
+// CreateInfoTableFromDataShape(infoTableName:STRING("InfoTable"), dataShapeName:STRING):INFOTABLE(chartTimeFrame)
+var result = Resources["InfoTableFunctions"].CreateInfoTableFromDataShape(params);
+
+result.start=me.P8_chartLastStart;
+result.end=me.P8_chartLastEnd;]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="Prev1week"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[//var params = {
+//    infoTableName : "InfoTable",
+//    dataShapeName : "chartTimeFrame"
+//};
+//
+//// CreateInfoTableFromDataShape(infoTableName:STRING("InfoTable"), dataShapeName:STRING):INFOTABLE(chartTimeFrame)
+//var result = Resources["InfoTableFunctions"].CreateInfoTableFromDataShape(params);
+//
+
+var prevHours = 24*7;//a weewk
+me.P8_chartLastStart =me.P8_chartLastStart.setHours(me.P8_chartLastStart.getHours()-prevHours);
+me.P8_chartLastEnd=me.P8_chartLastStart.setHours(me.P8_chartLastStart.getHours()+prevHours);
+
+
+
+
+
+
+
+]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="Prev32H"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[//var params = {
+//    infoTableName : "InfoTable",
+//    dataShapeName : "chartTimeFrame"
+//};
+//
+//// CreateInfoTableFromDataShape(infoTableName:STRING("InfoTable"), dataShapeName:STRING):INFOTABLE(chartTimeFrame)
+//var result = Resources["InfoTableFunctions"].CreateInfoTableFromDataShape(params);
+//
+
+var prevHours = 24*7;//a weewk
+me.P8_chartLastStart =me.P8_chartLastStart.setHours(me.P8_chartLastStart.getHours()-prevHours);
+me.P8_chartLastEnd=me.P8_chartLastStart.setHours(me.P8_chartLastStart.getHours()+prevHours);
+
+
+
+
+
+
+
+]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="Prev8H"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[//var params = {
+//    infoTableName : "InfoTable",
+//    dataShapeName : "chartTimeFrame"
+//};
+//
+//// CreateInfoTableFromDataShape(infoTableName:STRING("InfoTable"), dataShapeName:STRING):INFOTABLE(chartTimeFrame)
+//var result = Resources["InfoTableFunctions"].CreateInfoTableFromDataShape(params);
+//
+
+me.P8_chartLastStart =me.P8_chartLastStart.setHours(me.P8_chartLastStart.getHours()-8);
+me.P8_chartLastEnd=me.P8_chartLastStart.setHours(me.P8_chartLastStart.getHours()+32);
+
+
+
+
+
+
+
+]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="updateDateTimePickerLeft"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[if(DateTimePickerLeft>me.P8_chartLastEnd){
+    me.P8_chartLastStart=me.P8_chartLastEnd;
+	me.P8_chartLastEnd=DateTimePickerLeft;
+}else{
+	me.P8_chartLastStart=DateTimePickerLeft;
+}
+
+//result = me.P8_chartLastStart;]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="updateDateTimePickerRight"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[if(DateTimePickerLeft<me.P8_chartLastStart){
+    me.P8_chartLastEnd=me.P8_chartLastStart;
+	me.P8_chartLastStart=DateTimePickerLeft;
+}else{
+	me.P8_chartLastEnd=DateTimePickerLeft;
+}
+
+//result = me.P8_chartLastEnd;]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation></ServiceImplementations><Subscriptions/></ThingShape><PropertyBindings/><RemotePropertyBindings/><RemoteServiceBindings/><RemoteEventBindings/><AlertConfigurations><AlertDefinitions name="P8_chartLastEnd"/><AlertDefinitions name="P8_chartLastStart"/><AlertDefinitions name="P8_chartTimePeriodHR"/></AlertConfigurations><ImplementedShapes/><ThingProperties><P8_chartLastEnd><Value>2020-04-04T07:03:02.800Z</Value><Timestamp>2020-05-05T07:09:38.126Z</Timestamp><Quality>GOOD</Quality></P8_chartLastEnd><P8_chartLastStart><Value>2020-03-28T07:03:02.800Z</Value><Timestamp>2020-05-05T07:09:38.119Z</Timestamp><Quality>GOOD</Quality></P8_chartLastStart><P8_chartTimePeriodHR><Value>32</Value><Timestamp>2020-04-29T08:59:42.698Z</Timestamp><Quality>GOOD</Quality></P8_chartTimePeriodHR></ThingProperties><ConfigurationChanges><ConfigurationChange changeAction="CREATE" changeReason="header : name : updated, projectName : updated&#10;" timestamp="2020-04-28T09:17:26.988Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="services : Forward32H : service updated&#10;" timestamp="2020-04-28T09:19:01.400Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="services : Forward32H : service updated&#10;" timestamp="2020-04-28T09:19:50.166Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="services : Forward32H : service updated&#10;" timestamp="2020-04-28T09:20:03.311Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="services : Forward32H : service updated&#10;" timestamp="2020-04-28T09:21:52.927Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="services : Forward8H : service updated&#10;" timestamp="2020-04-28T09:22:23.354Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="services : Forward32H : service updated&#10;" timestamp="2020-04-28T09:22:37.237Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="services : Forward32H : service updated&#10;" timestamp="2020-04-28T09:23:10.116Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2020-05-05T02:27:58.683Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2020-05-05T07:00:27.925Z" user="Administrator"/></ConfigurationChanges></Thing></Things></Entities>

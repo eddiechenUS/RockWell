@@ -1,0 +1,1804 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><Entities build="b12" majorVersion="8" minorVersion="5" modelPersistenceProviderPackage="PostgresPersistenceProviderPackage" revision="0" schemaVersion="1050" universal=""><Things><Thing description="" documentationContent="" effectiveThingPackage="ConfiguredThing" enabled="true" homeMashup="" identifier="" lastModifiedDate="2020-04-28T09:02:55.563Z" name="CreateModule" projectName="RockWellPoC" published="false" tags="Applications:RockWellPocExport" thingTemplate="GenericThing" valueStream=""><Owner name="Administrator" type="User"/><avatar/><DesignTimePermissions><Create/><Read/><Update/><Delete/><Metadata/></DesignTimePermissions><RunTimePermissions/><VisibilityPermissions><Visibility/></VisibilityPermissions><ConfigurationTableDefinitions/><ConfigurationTables/><ThingShape><PropertyDefinitions/><ServiceDefinitions><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="AddIndusShapeToPOTTemplate"><ResultType baseType="STRING" description="" name="result" ordinal="0"/><ParameterDefinitions><FieldDefinition baseType="STRING" description="" name="PotTemplateName" ordinal="1"/></ParameterDefinitions></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="AddPOT_commToPOTTemplate"><ResultType baseType="STRING" description="" name="result" ordinal="0"/><ParameterDefinitions><FieldDefinition baseType="STRING" description="" name="PotTemplateName" ordinal="1"/></ParameterDefinitions></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="AddPropertiesToThing"><ResultType baseType="STRING" description="" name="result" ordinal="0"/><ParameterDefinitions/></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="broadcast"><ResultType aspect.dataShape="MessageQueneDS" baseType="INFOTABLE" description="" name="result" ordinal="0"/><ParameterDefinitions/></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="broadcastOnlinePOTs"><ResultType aspect.dataShape="MessageQueneDS" baseType="STRING" description="" name="result" ordinal="0"/><ParameterDefinitions/></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="Buffer_in_BindingIteration"><ResultType baseType="STRING" description="" name="result" ordinal="0"/><ParameterDefinitions><FieldDefinition baseType="STRING" description="" name="POTName" ordinal="1"/></ParameterDefinitions></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="Buffer_in_data_RemoveBinding"><ResultType baseType="STRING" description="" name="result" ordinal="0"/><ParameterDefinitions><FieldDefinition baseType="STRING" description="" name="POTName" ordinal="1"/></ParameterDefinitions></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="Buffer_in_id_BindingIteration"><ResultType baseType="STRING" description="" name="result" ordinal="0"/><ParameterDefinitions><FieldDefinition baseType="STRING" description="" name="POTName" ordinal="1"/></ParameterDefinitions></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="Buffer_in_id_data_RemoveBinding"><ResultType baseType="STRING" description="" name="result" ordinal="0"/><ParameterDefinitions><FieldDefinition baseType="STRING" description="" name="POTName" ordinal="1"/></ParameterDefinitions></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="Buffer_out_data_BindingIteration"><ResultType baseType="STRING" description="" name="result" ordinal="0"/><ParameterDefinitions><FieldDefinition baseType="STRING" description="" name="POTName" ordinal="1"/></ParameterDefinitions></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="Buffer_out_data_RemoveBinding"><ResultType baseType="STRING" description="" name="result" ordinal="0"/><ParameterDefinitions><FieldDefinition baseType="STRING" description="" name="POTName" ordinal="1"/></ParameterDefinitions></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="Buffer_out_id_BindingIteration"><ResultType baseType="STRING" description="" name="result" ordinal="0"/><ParameterDefinitions><FieldDefinition baseType="STRING" description="" name="POTName" ordinal="1"/></ParameterDefinitions></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="Buffer_out_id_RemoveBinding"><ResultType baseType="STRING" description="" name="result" ordinal="0"/><ParameterDefinitions><FieldDefinition baseType="STRING" description="" name="POTName" ordinal="1"/></ParameterDefinitions></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="create1Thing"><ResultType baseType="STRING" description="" name="result" ordinal="0"/><ParameterDefinitions><FieldDefinition baseType="STRING" description="" name="TestInputPOTName" ordinal="2"/></ParameterDefinitions></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="create1ThingAddPropertiesAndBindRemoteProperties"><ResultType baseType="NOTHING" description="" name="result" ordinal="0"/><ParameterDefinitions/></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="createEngineVTempate"><ResultType baseType="STRING" description="" name="result" ordinal="0"/><ParameterDefinitions/></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="CreateFinalPOTTemplate"><ResultType baseType="STRING" description="" name="result" ordinal="0"/><ParameterDefinitions><FieldDefinition baseType="STRING" description="" name="tempInputPotTempName" ordinal="1"/></ParameterDefinitions></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="createPOTAddPropertiesAddRemoteProperties"><ResultType baseType="STRING" description="" name="result" ordinal="0"/><ParameterDefinitions><FieldDefinition baseType="STRING" description="" name="InputPOTName" ordinal="1"/></ParameterDefinitions></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="createPOTThingTemplate"><ResultType baseType="STRING" description="" name="result" ordinal="0"/><ParameterDefinitions><FieldDefinition baseType="STRING" description="" name="POTTemplateAuto" ordinal="2"/></ParameterDefinitions></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="CreateThingBindWithGateWay"><ResultType baseType="STRING" description="" name="result" ordinal="0"/><ParameterDefinitions><FieldDefinition baseType="STRING" description="" name="TestInputPOTName" ordinal="1"/></ParameterDefinitions></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="CreateThingBindWithGateWay100POTs"><ResultType baseType="STRING" description="" name="result" ordinal="0"/><ParameterDefinitions><FieldDefinition aspect.defaultValue="1" aspect.isRequired="true" aspect.maximumValue="500" aspect.minimumValue="1" baseType="INTEGER" description="create from No.1 to No.N  POTs" name="QuantityOfPOTs" ordinal="2"/></ParameterDefinitions></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="crete01timeseries"><ResultType aspect.dataShape="create01seriesDS" baseType="INFOTABLE" description="" name="result" ordinal="0"/><ParameterDefinitions/></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="DeletePOTs"><ResultType baseType="STRING" description="" name="result" ordinal="0"/><ParameterDefinitions/></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="DetectAndcreateMultiPOT"><ResultType baseType="STRING" description="" name="result" ordinal="0"/><ParameterDefinitions/></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="DetectAndcreateMultiPOTWithBinding"><ResultType baseType="STRING" description="" name="result" ordinal="0"/><ParameterDefinitions/></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="enableBRSP"><ResultType aspect.dataShape="QueryBrspDS" baseType="INFOTABLE" description="" name="result" ordinal="0"/><ParameterDefinitions><FieldDefinition baseType="BOOLEAN" description="" name="check" ordinal="1"/></ParameterDefinitions></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="GetIndustrialThingArray"><ResultType aspect.dataShape="IndustrialThingsList" baseType="JSON" description="" name="result" ordinal="0"/><ParameterDefinitions/></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="getPOTinProj"><ResultType baseType="STRING" description="" name="result" ordinal="0"/><ParameterDefinitions/></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="getPOTRemoteProperties"><ResultType baseType="INFOTABLE" description="" name="result" ordinal="0"/><ParameterDefinitions><FieldDefinition baseType="STRING" description="" name="PotName" ordinal="1"/></ParameterDefinitions></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="GetPOTsequence"><ResultType baseType="STRING" description="" name="result" ordinal="0"/><ParameterDefinitions/></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="GetPOTsequenceBySearch"><ResultType baseType="JSON" description="" name="result" ordinal="0"/><ParameterDefinitions/></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="GreenOrRedPOT"><ResultType baseType="BOOLEAN" description="" name="result" ordinal="0"/><ParameterDefinitions><FieldDefinition baseType="STRING" description="" name="inputPOTName" ordinal="1"/></ParameterDefinitions></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="MessageTableFetchTop5"><ResultType aspect.dataShape="MessageQueneDS" baseType="INFOTABLE" description="" name="result" ordinal="0"/><ParameterDefinitions/></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="MiscRemoteProperty_RemoveBinding"><ResultType baseType="STRING" description="" name="result" ordinal="0"/><ParameterDefinitions><FieldDefinition baseType="STRING" description="" name="POTName" ordinal="1"/></ParameterDefinitions></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="MiscRemotePropertyBinding"><ResultType baseType="STRING" description="" name="result" ordinal="0"/><ParameterDefinitions><FieldDefinition baseType="STRING" description="" name="POTName" ordinal="1"/></ParameterDefinitions></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="REMOVE_ALL_RemoteBinding"><ResultType baseType="STRING" description="" name="result" ordinal="0"/><ParameterDefinitions><FieldDefinition baseType="STRING" description="" name="POTName" ordinal="1"/></ParameterDefinitions></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="ScanPOT"><ResultType baseType="JSON" description="" name="result" ordinal="0"/><ParameterDefinitions/></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="Sec_BindingIteration"><ResultType baseType="STRING" description="" name="result" ordinal="0"/><ParameterDefinitions><FieldDefinition baseType="STRING" description="" name="POTName" ordinal="1"/></ParameterDefinitions></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="Sec_RemoveBinding"><ResultType baseType="STRING" description="" name="result" ordinal="0"/><ParameterDefinitions><FieldDefinition baseType="STRING" description="" name="POTName" ordinal="1"/></ParameterDefinitions></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="Set_POT_ALL_Remote_Binding"><ResultType baseType="STRING" description="" name="result" ordinal="0"/><ParameterDefinitions><FieldDefinition baseType="STRING" description="" name="POTName" ordinal="1"/></ParameterDefinitions></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="setPOTRemoteBinding"><ResultType baseType="STRING" description="" name="result" ordinal="0"/><ParameterDefinitions><FieldDefinition baseType="STRING" description="" name="POTName" ordinal="1"/></ParameterDefinitions></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="SetRockWellProject"><ResultType baseType="STRING" description="" name="result" ordinal="0"/><ParameterDefinitions><FieldDefinition baseType="STRING" description="" name="POTName" ordinal="1"/></ParameterDefinitions></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="TestAddDataTable"><ResultType baseType="STRING" description="" name="result" ordinal="0"/><ParameterDefinitions><FieldDefinition baseType="STRING" description="" name="inputMessage" ordinal="1"/></ParameterDefinitions></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="TestAddProperties"><ResultType baseType="NOTHING" description="" name="result" ordinal="0"/><ParameterDefinitions/></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="TestBind"><ResultType baseType="NOTHING" description="" name="result" ordinal="0"/><ParameterDefinitions><FieldDefinition baseType="STRING" description="" name="POTName" ordinal="1"/></ParameterDefinitions></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="TestCreate40POTs"><ResultType baseType="STRING" description="" name="result" ordinal="0"/><ParameterDefinitions><FieldDefinition aspect.defaultValue="1" aspect.maximumValue="40" aspect.minimumValue="1" baseType="INTEGER" description="" name="QuantityOfPOTs" ordinal="1"/></ParameterDefinitions></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="TestCreateTemplate"><ResultType baseType="NOTHING" description="" name="result" ordinal="0"/><ParameterDefinitions/></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="TestCreateThing"><ResultType baseType="NOTHING" description="" name="result" ordinal="0"/><ParameterDefinitions><FieldDefinition baseType="STRING" description="" name="addTemplate" ordinal="1"/><FieldDefinition baseType="STRING" description="" name="ThingName" ordinal="2"/></ParameterDefinitions></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="testGateWayConnnection"><ResultType baseType="STRING" description="" name="result" ordinal="0"/><ParameterDefinitions/></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="TestGetBoundRemoteThing"><ResultType baseType="INFOTABLE" description="" name="result" ordinal="0"/><ParameterDefinitions/></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="testPlus0"><ResultType baseType="STRING" description="" name="result" ordinal="0"/><ParameterDefinitions/></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="testScan"><ResultType baseType="STRING" description="" name="result" ordinal="0"/><ParameterDefinitions/></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="UpdateIndustrialBinding"><ResultType baseType="STRING" description="" name="result" ordinal="0"/><ParameterDefinitions><FieldDefinition baseType="STRING" description="" name="IndustrialThingName" ordinal="1"/></ParameterDefinitions></ServiceDefinition></ServiceDefinitions><EventDefinitions/><ServiceMappings/><ServiceImplementations><ServiceImplementation description="" handlerName="Script" name="AddIndusShapeToPOTTemplate"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[// result: STRING
+var PotTemplateNameCreated =  me.createPOTThingTemplate({
+	POTTemplateAuto: PotTemplateName /* STRING */
+});
+
+
+try{
+var params = {
+	name: PotTemplateNameCreated /* THINGTEMPLATENAME */,
+	thingShapeName: "IndustrialThingShape" /* THINGSHAPENAME */
+};
+
+
+// no return
+Resources["EntityServices"].AddShapeToThingTemplate(params);
+    result = PotTemplateNameCreated;
+}catch(err){
+	result = "add shape error";
+}
+
+
+]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="AddPOT_commToPOTTemplate"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[// result: STRING
+var PotTemplateNameCreated =  me.AddIndusShapeToPOTTemplate({
+	PotTemplateName: PotTemplateName /* STRING */
+});
+
+try{
+var params = {
+	name: PotTemplateNameCreated /* THINGTEMPLATENAME */,
+	thingShapeName: "POT_comm" /* THINGSHAPENAME */
+};
+
+// no return
+Resources["EntityServices"].AddShapeToThingTemplate(params);
+    result= PotTemplateNameCreated;
+}catch(err){
+	result= "err happened adding POT_comm Thing shape";
+}
+]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="AddPropertiesToThing"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[//add a remote property
+
+var paramsIns = {
+    defaultValue: undefined, // STRING
+    description: undefined, // STRING
+    readOnly: false, // BOOLEAN
+    type: "STRING", // BASETYPENAME
+    remote: false, // BOOLEAN
+    remotePropertyName: "ThisIsMyNamedProperty", // STRING
+    timeout: undefined, // INTEGER
+    pushType: "VALUE", // STRING
+    dataChangeThreshold: undefined, // NUMBER
+    logged: false, // BOOLEAN
+    name: "variabile", // STRING
+    pushThreshold: undefined, // NUMBER
+    dataChangeType: "VALUE", // STRING
+    category: "remote", // STRING
+    persistent: true, // BOOLEAN
+    dataShape: undefined // DATASHAPENAME
+};
+// try to add property
+try {
+    Thing['simpleThing2'].AddPropertyDefinition(paramsIns);
+    result = "successful added";
+} catch (e) {
+    logger.error("ERROR adding proeprty:  " + e);
+    result = "added failed "+e;
+}
+
+
+
+
+
+
+
+
+
+
+
+]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="broadcast"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[//this is for show one time.
+
+var params = {
+    infoTableName: "InfoTable",
+    dataShapeName: "MessageQueneDS"
+};
+
+// CreateInfoTableFromDataShape(infoTableName:STRING("InfoTable"), dataShapeName:STRING):INFOTABLE(MessageQueneDS)
+var result = Resources["InfoTableFunctions"].CreateInfoTableFromDataShape(params);
+
+// result: JSON
+var tempJSON = me.ScanPOT(); // {"array": ["001","002"]}
+var tempLength = tempJSON.array.length;
+var PrefixName = 'POT_';
+var TrueOrFalse = false;
+var Message = '';
+//var resultQueneStringTreuFalse='-';
+for (var i = 0; i < tempLength; i++) {
+    // result: BOOLEAN
+    var RegName = PrefixName + tempJSON.array[i];
+    //resultQueneStringTreuFalse+=me.GreenOrRedPOT({
+    TrueOrFalse = me.GreenOrRedPOT({
+            inputPOTName: RegName /* STRING */
+        });
+    if (TrueOrFalse) {
+        Message = RegName + ' is online';
+    } else {
+        Message = RegName + ' is offline';
+    }
+
+//    try {
+//        var values = Things["MessageTable"].CreateValues();
+//        values.TimeStamp = new Date(); //LOCATION
+//        values.Message = Message;
+//        var params2 = {
+//            sourceType: undefined /* STRING */,
+//            values: values /* INFOTABLE*/,
+//            location: undefined /* LOCATION */,
+//            source: undefined /* STRING */,
+//            tags: undefined /* TAGS */
+//        };
+//        // result: STRING
+//        Things["MessageTable"].AddDataTableEntry(params2);
+//        result = 'addDataTableEntry ok';
+//    } catch (e) {
+//        result = e;
+//    }
+
+    result.AddRow({ 'Message': Message,'TimeStamp':new Date()});   //this is for infotable
+    //resultQueneStringTreuFalse+='-';
+}
+//var result =resultQueneStringTreuFalse;//-true-true-
+
+]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="broadcastOnlinePOTs"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[var params = {
+    infoTableName: "InfoTable",
+    dataShapeName: "MessageQueneDS"
+};
+
+// CreateInfoTableFromDataShape(infoTableName:STRING("InfoTable"), dataShapeName:STRING):INFOTABLE(MessageQueneDS)
+var result = Resources["InfoTableFunctions"].CreateInfoTableFromDataShape(params);
+
+// result: JSON
+var tempJSON = me.ScanPOT(); // {"array": ["001","002"]}
+var tempLength = tempJSON.array.length;
+var PrefixName = 'POT_';
+var TrueOrFalse = false;
+var Message = '';
+//var resultQueneStringTreuFalse='-';
+for (var i = 0; i < tempLength; i++) {
+    // result: BOOLEAN
+    var RegName = PrefixName + tempJSON.array[i];
+    //resultQueneStringTreuFalse+=me.GreenOrRedPOT({
+    TrueOrFalse = me.GreenOrRedPOT({
+            inputPOTName: RegName /* STRING */
+        });
+    if (TrueOrFalse) {
+        Message = RegName + ' is online';
+    } else {
+        //here kepware is offline, and onlt write 1 line message and end loop
+        Message = RegName + 'kepware is disconnected';
+        try {
+            var values = Things["MessageTable"].CreateValues();
+            values.TimeStamp = new Date(); //LOCATION
+            values.Message = Message;
+            var params2 = {
+                sourceType: undefined /* STRING */,
+                values: values /* INFOTABLE*/,
+                location: undefined /* LOCATION */,
+                source: undefined /* STRING */,
+                tags: undefined /* TAGS */
+            };
+            // result: STRING
+            Things["MessageTable"].AddDataTableEntry(params2);
+            result = 'addDataTableEntry ok';
+        } catch (e) {
+            result = e;
+        }
+        break;
+    }
+
+    
+    //here kepware is online
+    try {
+        var values1 = Things["MessageTable"].CreateValues();
+        values1.TimeStamp = new Date(); //LOCATION
+        values1.Message = Message;
+        var params3 = {
+            sourceType: undefined /* STRING */,
+            values: values1 /* INFOTABLE*/,
+            location: undefined /* LOCATION */,
+            source: undefined /* STRING */,
+            tags: undefined /* TAGS */
+        };
+        // result: STRING
+        Things["MessageTable"].AddDataTableEntry(params3);
+        result = 'addDataTableEntry ok';
+    } catch (e) {
+        result = e;
+    }
+
+    //result.AddRow({ 'Message': Message,'TimeStamp':new Date()});   //this is for infotable
+    //resultQueneStringTreuFalse+='-';
+}
+//var result =resultQueneStringTreuFalse;//-true-true-
+
+]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="Buffer_in_BindingIteration"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[var number;
+var POTnumber = POTName.substring(4);
+
+var POTNameForBind = 'POT.'+POTnumber;
+var POTNameForPOTThingName = 'POT_'+POTnumber;
+for (var i = 0; i <= 30; i++) {
+    if (i > 10) {
+        number = '0' + i;
+    } else if (i === 10) {
+        number = '010';
+    } else {
+        number = '00' + i;
+    }
+    var TagAddress = 'comm.' + POTNameForBind + '.buffer_in_data_' + number;
+    var PropertyName = 'comm_POT_buffer_in_data_' + number;
+
+    try{
+    	Things[POTNameForPOTThingName].SetRemotePropertyBinding({
+        propertyName: PropertyName /* STRING */,
+        pushThreshold: 0 /* NUMBER */,
+        aspects: {
+            "industrialDataType": "Long",
+            "tagAddress": TagAddress,
+            "scanRate": 1000,
+            "tagType": "Static",
+            "startType": "readEdgeValue",
+            "source": "",
+            "dataShape": ""
+        } /* JSON */,
+        foldType: 'NONE' /* STRING */,
+        sourcePropertyName: undefined /* STRING */,
+        timeout: 0 /* INTEGER */,
+        pushType: 'ALWAYS' /* STRING */,
+        cacheTime: undefined /* INTEGER */
+    });
+     result = TagAddress;
+       // result = 'bind comm_POT_buffer_in_data ok!';
+    }catch(err){
+    	result = err;
+    }   
+}]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="Buffer_in_data_RemoveBinding"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[
+var POTnumber = POTName.substring(4);
+
+var POTNameForBind = 'POT.'+POTnumber;
+var POTNameForPOTThingName = 'POT_'+POTnumber;
+
+
+for (var i = 0; i <= 30; i++) {
+    if (i > 10) {
+        number = '0' + i;
+    } else if (i === 10) {
+        number = '010';
+    } else {
+        number = '00' + i;
+    }
+    var PropertyName = 'comm_POT_buffer_in_data_' + number;
+    try{
+    	Things[POTNameForPOTThingName].RemoveRemotePropertyBinding({
+        	propertyName: PropertyName /* STRING */
+    	});
+        result = 'remove comm_POT_buffer_in_data';
+    }catch(err){
+    	result = err;
+    }  
+}
+]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="Buffer_in_id_BindingIteration"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[var number;
+var POTnumber = POTName.substring(4);
+
+var POTNameForBind = 'POT.'+POTnumber;
+var POTNameForPOTThingName = 'POT_'+POTnumber;
+for (var i = 0; i <= 30; i++) {
+    if (i > 10) {
+        number = '0' + i;
+    } else if (i === 10) {
+        number = '010';
+    } else {
+        number = '00' + i;
+    }
+    var TagAddress = 'comm.' + POTNameForBind + '.buffer_in_id_' + number;
+    var PropertyName = 'comm_POT_buffer_in_id_' + number;
+
+    try{
+    	Things[POTNameForPOTThingName].SetRemotePropertyBinding({
+        propertyName: PropertyName /* STRING */,
+        pushThreshold: 0 /* NUMBER */,
+        aspects: {
+            "industrialDataType": "Long",
+            "tagAddress": TagAddress,
+            "scanRate": 1000,
+            "tagType": "Static",
+            "startType": "readEdgeValue",
+            "source": "",
+            "dataShape": ""
+        } /* JSON */,
+        foldType: 'NONE' /* STRING */,
+        sourcePropertyName: undefined /* STRING */,
+        timeout: 0 /* INTEGER */,
+        pushType: 'ALWAYS' /* STRING */,
+        cacheTime: undefined /* INTEGER */
+    });
+        
+        result = 'bind buffer_in_id ok!';
+    }catch(err){
+    	result = err;
+    }   
+}]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="Buffer_in_id_data_RemoveBinding"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[
+var POTnumber = POTName.substring(4);
+
+var POTNameForBind = 'POT.'+POTnumber;
+var POTNameForPOTThingName = 'POT_'+POTnumber;
+
+for (var i = 0; i <= 30; i++) {
+    if (i > 10) {
+        number = '0' + i;
+    } else if (i === 10) {
+        number = '010';
+    } else {
+        number = '00' + i;
+    }
+    var PropertyName = 'comm_POT_buffer_in_id_' + number;
+    try{
+    	Things[POTNameForPOTThingName].RemoveRemotePropertyBinding({
+        	propertyName: PropertyName /* STRING */
+    	});
+        result = 'removed all comm_POT_buffer_in_id';
+    }catch(err){
+    	result = err;
+    }  
+}
+]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="Buffer_out_data_BindingIteration"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[var number;
+var POTnumber = POTName.substring(4);
+
+var POTNameForBind = 'POT.'+POTnumber;
+var POTNameForPOTThingName = 'POT_'+POTnumber;
+
+for (var i = 0; i <= 30; i++) {
+    if (i > 10) {
+        number = '0' + i;
+    } else if (i === 10) {
+        number = '010';
+    } else {
+        number = '00' + i;
+    }
+    var TagAddress = 'comm.' + POTNameForBind + '.buffer_out_data_' + number;
+    var PropertyName = 'comm_POT_buffer_out_data_' + number;
+
+    try{
+    	Things[POTNameForPOTThingName].SetRemotePropertyBinding({
+        propertyName: PropertyName /* STRING */,
+        pushThreshold: 0 /* NUMBER */,
+        aspects: {
+            "industrialDataType": "Long",
+            "tagAddress": TagAddress,
+            "scanRate": 1000,
+            "tagType": "Static",
+            "startType": "readEdgeValue",
+            "source": "",
+            "dataShape": ""
+        } /* JSON */,
+        foldType: 'NONE' /* STRING */,
+        sourcePropertyName: undefined /* STRING */,
+        timeout: 0 /* INTEGER */,
+        pushType: 'ALWAYS' /* STRING */,
+        cacheTime: undefined /* INTEGER */
+    });
+        
+        result = 'bind buffer_out_data ok';
+    }catch(err){
+    	result = err;
+    }   
+}]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="Buffer_out_data_RemoveBinding"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[var POTnumber = POTName.substring(4);
+
+var POTNameForBind = 'POT.'+POTnumber;
+var POTNameForPOTThingName = 'POT_'+POTnumber;
+
+for (var i = 0; i <= 30; i++) {
+    if (i > 10) {
+        number = '0' + i;
+    } else if (i === 10) {
+        number = '010';
+    } else {
+        number = '00' + i;
+    }
+    var PropertyName = 'comm_POT_buffer_out_data_' + number;
+    try{
+    	Things[POTNameForPOTThingName].RemoveRemotePropertyBinding({
+        	propertyName: PropertyName /* STRING */
+    	});
+        result = 'remove all comm_'+POTName+'_buffer_out_data';
+    }catch(err){
+    	result = err;
+    }  
+}
+]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="Buffer_out_id_BindingIteration"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[var number;
+var POTnumber = POTName.substring(4);
+
+var POTNameForBind = 'POT.'+POTnumber;
+var POTNameForPOTThingName = 'POT_'+POTnumber;
+
+for (var i = 0; i <= 30; i++) {
+    if (i > 10) {
+        number = '0' + i;
+    } else if (i === 10) {
+        number = '010';
+    } else {
+        number = '00' + i;
+    }
+    var TagAddress = 'comm.' + POTNameForBind + '.buffer_out_id_' + number;
+    var PropertyName = 'comm_POT_buffer_out_id_' + number;
+
+    try{
+    	Things[POTNameForPOTThingName].SetRemotePropertyBinding({
+        propertyName: PropertyName /* STRING */,
+        pushThreshold: 0 /* NUMBER */,
+        aspects: {
+            "industrialDataType": "Long",
+            "tagAddress": TagAddress,
+            "scanRate": 1000,
+            "tagType": "Static",
+            "startType": "readEdgeValue",
+            "source": "",
+            "dataShape": ""
+        } /* JSON */,
+        foldType: 'NONE' /* STRING */,
+        sourcePropertyName: undefined /* STRING */,
+        timeout: 0 /* INTEGER */,
+        pushType: 'ALWAYS' /* STRING */,
+        cacheTime: undefined /* INTEGER */
+    });
+        
+        result = 'bind all buffer_out_id ok';
+    }catch(err){
+    	result = err;
+    }   
+}]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="Buffer_out_id_RemoveBinding"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[var POTnumber = POTName.substring(4);
+
+var POTNameForBind = 'POT.'+POTnumber;
+var POTNameForPOTThingName = 'POT_'+POTnumber;
+
+for (var i = 0; i <= 30; i++) {
+    if (i > 10) {
+        number = '0' + i;
+    } else if (i === 10) {
+        number = '010';
+    } else {
+        number = '00' + i;
+    }
+    var PropertyName = 'comm_POT_buffer_out_id_' + number;
+    try{
+    	Things[POTNameForPOTThingName].RemoveRemotePropertyBinding({
+        	propertyName: PropertyName /* STRING */
+    	});
+        result = 'remove all comm_'+POTName+'_buffer_out_id';
+    }catch(err){
+    	result = err;
+    }  
+}
+]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="create1Thing"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[function debug(msg){ if(parseInt(TestInputPOTName.substring(4),10)==1) logger.debug('CreateModule.create1Thing('+TestInputPOTName+') ' + msg); }
+//TestInputPOTName in format: POT_001
+var PotNumberInt=parseInt(TestInputPOTName.substring(4),10);
+var FlagSub='flag'+(PotNumberInt % 10);
+var sub_name='sub_flag'+(PotNumberInt % 10);
+function SubscribeToFlagChange(ASubscriber, AProperty){
+    debug('SubscribeToFlagChange(ASubscriber=' + ASubscriber.name + ' ,AProperty=' + AProperty +')');
+    ASubscriber.AddDynamicSubscription({
+    propertyName: AProperty /* STRING */,
+    thingName: "POT_comm_timer" /* THINGNAME - leave blank to subscribe to own events*/,
+    eventName: "DataChange" /* STRING */,
+    serviceName: "comm_process_trigger" /* STRING */
+    });
+}
+function enable_subscribtion(ASubscriber, sub_name){
+    debug('enable_subscribtion(ASubscriber=' + ASubscriber.name + ' ,sub_name=' + sub_name +')');
+    ASubscriber.EnableSubscription({
+        propertyName: "sub_name" /* STRING */,
+        thingName: ASubscriber.name /* THINGNAME */,
+        eventName: "DataChange" /* STRING */
+    });
+
+
+
+}
+
+var result;
+try {
+    var params1 = {
+        name: TestInputPOTName,
+        description: "created a thing with POTTemplateManual",
+        thingTemplateName: "POTTemplateManual"//+((PotNumberInt-1)%10)
+    };
+    Resources["EntityServices"].CreateThing(params1);
+    // Always enable and restart a new thing to make it active on the Platform
+    Things[TestInputPOTName].EnableThing();
+    Things[TestInputPOTName].RestartThing();
+    //SubscribeToFlagChange(Things[TestInputPOTName],FlagSub);
+    //enable_subscribtion(Things[TestInputPOTName],sub_name);
+    result = 'create successful';
+    
+    //Now Create an Organization for the new Thing
+//    var params2 = {
+//        topOUName: "NewOrgName",
+//        name: "NewOrgName",
+//        description: "New Orgianization for new Thing",
+//        topOUDescription: "New Org Main"
+//
+//    };
+//    Resources["EntityServices"].CreateOrganization(params2);
+    // Any code that could potentially cause an exception should
+    // also be included in the try-catch block.
+} catch (err) {
+    debug('error: '+ err);
+    result = err;
+    // If an exception is caught, we need to attempt to delete everything
+    // that was created to roll back the entire transaction.
+    // If we do not do this a "ghost" entity will remain in memory
+    // We must do this in reverse order of creation so there are no dependency conflicts
+    // We also do not know where it failed so we must attempt to remove all of them,
+    // but also handle exceptions in case they were not created
+//    try {
+//        var params3 = {
+//            name: "NewOrgName"
+//        };
+//        Resources["EntityServices"].DeleteOrganization(params3);
+//    } catch (ex2) { //Org was not created
+//    }
+//    try {
+//        var params4 = {
+//            name: 'CoolnewThing'
+//        };
+//        Resources["EntityServices"].DeleteThing(params4);
+//    } catch (ex2) { //Thing was not created
+//    }
+}]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="create1ThingAddPropertiesAndBindRemoteProperties"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code/></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="createEngineVTempate"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[
+var params = {
+	name: "EngineV" /* STRING */,
+	description: "this is created EngineV thingTemplate" /* STRING */,
+	thingTemplateName: "RemoteThing" /* THINGTEMPLATENAME */,
+	tags: undefined /* TAGS */
+};
+
+// no return
+Resources["EntityServices"].CreateThingTemplate(params);
+//
+////-----------add shape to Template
+//
+//var params2 = {
+//	name: "EngineV" /* THINGTEMPLATENAME */,
+//	thingShapeName: "IndustrialThingShape" /* THINGSHAPENAME */
+//};
+//
+//// no return
+//Resources["EntityServices"].AddShapeToThingTemplate(params2);
+
+
+//var params3 = {
+//	name: "EngineV" /* THINGTEMPLATENAME */
+//};
+//
+//// no return
+//Resources["EntityServices"].DeleteThingTemplate(params3);
+
+result = "created EngineVTempate successful!";
+
+
+]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="CreateFinalPOTTemplate"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[// result: STRING
+try{
+var templateName =  me.AddPOT_commToPOTTemplate({
+	PotTemplateName: tempInputPotTempName/* STRING */
+});
+    result = templateName;
+}catch(err){
+	result = "final create template failed";
+}
+
+
+]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="createPOTAddPropertiesAddRemoteProperties"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[var POTName = InputPOTName;
+//-----------------create thing
+try {
+    var params = {
+        name: POTName /* STRING */,
+        description: undefined /* STRING */,
+        thingTemplateName: 'POTTemplateManual' /* THINGTEMPLATENAME */,
+        tags: undefined /* TAGS */
+    };
+    // no return
+    Resources["EntityServices"].CreateThing(params);
+    result = 'CreateThing ok ';
+
+} catch (e) {
+    result = 'CreateThing err: '+ e;
+}
+
+//-----------------AddThingTemplate
+//try {
+//    var params2 = {
+//        name: POTName /* THINGNAME */,
+//        thingShapeName: 'IndustrialThingShape' /* THINGSHAPENAME */
+//    };
+//    // no return
+//    Resources["EntityServices"].AddShapeToThing(params2);
+//    result = 'AddShapeToThing ok ';
+//} catch (e) {
+//    result = 'AddShapeToThing err: '+ e;
+//}
+
+
+
+
+
+]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="createPOTThingTemplate"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[
+
+var params = {
+	name: POTTemplateAuto  /* STRING */,
+	description: "POT Template Auto Create" /* STRING */,
+	thingTemplateName: "RemoteThing" /* THINGTEMPLATENAME */,
+	tags: undefined /* TAGS */
+};
+
+try{
+	Resources["EntityServices"].CreateThingTemplate(params);
+	result = POTTemplateAuto;
+}catch(err){
+	result = "create base Template err";
+}
+
+
+
+
+
+
+
+
+
+
+]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="CreateThingBindWithGateWay"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[
+
+
+var result;
+try{
+
+    me.create1Thing({
+	TestInputPOTName: TestInputPOTName /* STRING */
+});
+    try{
+    	// result: STRING
+		result =  me.UpdateIndustrialBinding({
+		IndustrialThingName: TestInputPOTName /* STRING */
+	});
+        
+    }catch(e){
+        result=e;
+	}
+}catch(e){   
+	result=e;
+}
+
+// result: STRING
+   result =  me.SetRockWellProject({
+	POTName: TestInputPOTName /* STRING */
+});
+
+
+
+
+
+
+]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="CreateThingBindWithGateWay100POTs"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[var result;
+var POTName;
+var msg;
+for (var i = 1; i <= QuantityOfPOTs; i++) {
+
+    if (i >= 10 && i <100) {
+        POTName = 'POT_0' + i;
+    } else if (i >= 100) {
+        POTName = 'POT_' + i;
+    } else {
+        POTName = 'POT_00' + i;
+    }
+
+    try {
+        // result: STRING
+        me.create1Thing({
+            TestInputPOTName: POTName /* STRING */
+        });
+        msg = 'create1Thing ok';
+        
+        try {
+
+        me.UpdateIndustrialBinding({
+            IndustrialThingName: POTName /* STRING */
+        });
+        msg = 'UpdateIndustrialBinding ok';
+    } catch (e) {
+        msg = 'UpdateIndustrialBinding error ' + e;
+    }
+        
+    } catch (e) {
+        msg = 'create1Thing error ' + e;
+    }
+
+    try {
+        // result: STRING
+        me.SetRockWellProject({
+            POTName: POTName /* STRING */
+        });
+        msg = 'SetRockWellProject ok';
+    } catch (e) {
+        msg = 'SetRockWellProject error ' + e;
+    }
+}
+result = msg;
+]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="crete01timeseries"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[
+var params = {
+	infoTableName: "test1" /* STRING */,
+	dataShapeName: "create01seriesDS" /* DATASHAPENAME */
+};
+
+// result: INFOTABLE
+var result = Resources["InfoTableFunctions"].CreateInfoTableFromDataShape(params);
+
+// SampleDataShapeForPage8 entry object
+var new1 = new Object();
+var new2 = new Object();
+var new3 = new Object();
+var new4 = new Object();
+var new5 = new Object();
+var new6 = new Object();
+var new7 = new Object();
+var new8 = new Object();
+var new9 = new Object();
+var new10 = new Object();
+var new11 = new Object();
+var new12 = new Object();
+var new13 = new Object();
+var new14 = new Object();
+var new15 = new Object();
+var new16 = new Object();
+var new17 = new Object();
+var new18 = new Object();
+var new19 = new Object();
+var new20 = new Object();
+var new21 = new Object();
+var new22 = new Object();
+var new23 = new Object();
+var new24 = new Object();
+var new25 = new Object();
+var new26 = new Object();
+var new27 = new Object();
+var new28 = new Object();
+var new29 = new Object();
+var new30 = new Object();
+new1.AudioMso = -1; // STRING
+new2.AudioMso = 4;
+new3.AudioMso = 4;
+new4.AudioMso = 4;
+new5.AudioMso = 4;
+new6.AudioMso = 4;
+new7.AudioMso = -1;
+new8.AudioMso = -1;
+new9.AudioMso = -1;
+new10.AudioMso = 10;
+new11.AudioMso = 4;
+new12.AudioMso = 4;
+new13.AudioMso = 4;
+new14.AudioMso = 4;
+new15.AudioMso = 4;
+new16.AudioMso = 4;
+new17.AudioMso = 4;
+new18.AudioMso = -1;
+new19.AudioMso = 4;
+new20.AudioMso = 4;
+new21.AudioMso = 4;
+new22.AudioMso = -1;
+new23.AudioMso = -1;
+new24.AudioMso = 4;
+new25.AudioMso = 4;
+new26.AudioMso = 4;
+new27.AudioMso = 4;
+new28.AudioMso = 4;
+new29.AudioMso = 4;
+new30.AudioMso = 4;
+new1.time = 1563582045500;
+new2.time = 1563582045810;
+new3.time = 1563582045812;
+new4.time = 1563582045830;
+new5.time = 1563582045832;
+new6.time = 1563582045834;
+new7.time = 1563582045840;
+new8.time = 1563582045842;
+new9.time = 1563582045844;
+new10.time = 1563582045846;
+new11.time = 1563582045848;
+new12.time = 1563582045850;
+new13.time = 1563582045852;
+new14.time = 1563582045854;
+new15.time = 1563582045856;
+new16.time = 1563582045858;
+new17.time = 1563582045860;
+new18.time =1563582045962;
+new19.time =1563582045964;
+new20.time =1563582045966;
+new21.time =1563582045968;
+new22.time =1563582045970;
+new23.time =1563582045980;
+new24.time =1563582045982;
+new25.time =1563582045984;
+new26.time =1563582045986;
+new27.time =1563582046000;
+new28.time =1563582046002;
+new29.time =1563582046004;
+new30.time =1563582046006;
+//new2.time = 1563589076000;
+//new3.time = 1563596276000;
+//new4.time = 1563603476000;
+//new5.time = 1563610676000;
+//new6.time = 1563617876000;
+//new7.time = 1563625076000;
+//new8.time = 1563632276000;
+//new9.time = 1563639476000;
+//new10.time = 1563646676000;
+//new11.time = 1563653876000;
+//new12.time = 1563661076000;
+//new13.time = 1563668276000;
+//new14.time = 1563675476000;
+//new15.time = 1563682676000;
+//new16.time = 1563689876000;
+//new17.time = 1563697076000;
+//new1.BtpBprBp = -1;
+//new2.BtpBprBp = 3;
+//new3.BtpBprBp = 3;
+//new4.BtpBprBp = 3;
+//new5.BtpBprBp = 3;
+//new6.BtpBprBp = -1;
+//new7.BtpBprBp = -1;
+//new8.BtpBprBp = 3;
+//new9.BtpBprBp = 3;
+//new10.BtpBprBp = 3;
+//new11.BtpBprBp = 3;
+//new12.BtpBprBp = 3;
+//new13.BtpBprBp = 3;
+//new14.BtpBprBp = 3;
+//new15.BtpBprBp = 3;
+//new16.BtpBprBp = 3;
+//new17.BtpBprBp = 3;
+//new18.BtpBprBp = 3;
+//new19.BtpBprBp = 3;
+//new20.BtpBprBp = 3;
+//new21.BtpBprBp = 3;
+//new22.BtpBprBp = 3;
+//new23.BtpBprBp = -1;
+//new24.BtpBprBp = 3;
+//new25.BtpBprBp = 3;
+//new26.BtpBprBp = 3;
+//new27.BtpBprBp = 3;
+//new28.BtpBprBp = 3;
+//new29.BtpBprBp = 3;
+//new30.BtpBprBp = 3;
+//
+//new1.AEL = -1;
+//new2.AEL = 1;
+//new3.AEL = 1;
+//new4.AEL = -1;
+//new5.AEL = -1;
+//new6.AEL = -1;
+//new7.AEL = -1;
+//new8.AEL = -1;
+//new9.AEL = -1;
+//new10.AEL = -1;
+//new11.AEL = -1;
+//new12.AEL = -1;
+//new13.AEL = -1;
+//new14.AEL = -1;
+//new15.AEL = -1;
+//new16.AEL = 1;
+//new17.AEL = 1;
+//new18.AEL = 1;
+//new19.AEL = 1;
+//new20.AEL = 1;
+//new21.AEL = 1;
+//new22.AEL = 1;
+//new23.AEL = 1;
+//new24.AEL = 1;
+//new25.AEL = 1;
+//new26.AEL = 1;
+//new27.AEL = 1;
+//new28.AEL = 1;
+//new29.AEL = 1;
+//new30.AEL = 1;
+//
+//
+//new1.FD = -1;
+//new2.FD = 2;
+//new3.FD = 2;
+//new4.FD = -1;
+//new5.FD = -1;
+//new6.FD = -1;
+//new7.FD = -1;
+//new8.FD = -1;
+//new9.FD = -1;
+//new10.FD = -1;
+//new11.FD = -1;
+//new12.FD = -1;
+//new13.FD = -1;
+//new14.FD = -1;
+//new15.FD = -1;
+//new16.FD = 2;
+//new17.FD = 2;
+//new18.FD = 2;
+//new19.FD = 2;
+//new20.FD = 2;
+//new21.FD = 2;
+//new22.FD = 2;
+//new23.FD = 2;
+//new24.FD = 2;
+//new25.FD = 2;
+//new26.FD = 2;
+//new27.FD = 2;
+//new28.FD = 2;
+//new29.FD = 2;
+//new30.FD = 2;
+
+result.AddRow(new1);
+result.AddRow(new2);
+result.AddRow(new3);
+result.AddRow(new4);
+result.AddRow(new5);
+result.AddRow(new6);
+result.AddRow(new7);
+result.AddRow(new8);
+result.AddRow(new9);
+result.AddRow(new10);
+result.AddRow(new11);
+result.AddRow(new12);
+result.AddRow(new13);
+result.AddRow(new14);
+result.AddRow(new15);
+result.AddRow(new16);
+result.AddRow(new17);
+result.AddRow(new18);
+result.AddRow(new19);
+result.AddRow(new20);
+result.AddRow(new21);
+result.AddRow(new22);
+result.AddRow(new23);
+result.AddRow(new24);
+result.AddRow(new25);
+result.AddRow(new26);
+result.AddRow(new27);
+result.AddRow(new28);
+result.AddRow(new29);
+result.AddRow(new30);]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="DeletePOTs"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[var POTsJSON = me.GetPOTsequenceBySearch();
+var POTsQTY = POTsJSON.array.length;
+for (var i = 0; i < POTsQTY; i++) {
+    try {
+        var params = {
+            name: POTsJSON.array[i]/* THINGNAME */
+        };
+        // no return
+        Resources["EntityServices"].DeleteThing(params);
+         result = 'delete POTs ok';
+    } catch (e) {
+        result = 'something wring while delete POTs ' + e;
+    }
+}
+
+
+
+]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="DetectAndcreateMultiPOT"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[// result: JSON
+var POTCollectionJSONobj =  me.ScanPOT();
+var message;
+var result;
+for(var i = 0 ;i<POTCollectionJSONobj.array.length ; i++){
+	var ScannedPOTnum=POTCollectionJSONobj.array[i];
+    // result: STRING
+    try{
+    	// result: STRING
+    message =  me.CreateThingBindWithGateWay({
+	TestInputPOTName: ScannedPOTnum /* STRING */
+});
+    }catch(e){
+    	message = ScannedPOT+' failed to create, err is : '+e;
+    }
+}
+
+result  = message;
+]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="DetectAndcreateMultiPOTWithBinding"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[// result: JSON
+var POTCollectionJSONobj = me.ScanPOT();
+var message;
+var result;
+var POTName;
+
+for (var i = 0; i < POTCollectionJSONobj.array.length; i++) {
+    var ScannedPOTnum = POTCollectionJSONobj.array[i]; //001,002
+    POTNameForBinding = 'POT.' + ScannedPOTnum;
+    POTNameForCreatingPOT = 'POT_' + ScannedPOTnum;
+    // result: STRING
+    try {
+        // result: STRING
+        message = me.CreateThingBindWithGateWay({
+                TestInputPOTName: POTNameForCreatingPOT /* STRING */
+            });
+        try {
+            // result: STRING
+            var result2 = me.Set_POT_ALL_Remote_Binding({
+                    POTName: POTNameForBinding /* STRING */
+                });
+        } catch (err) {
+            message = 'failed to bind properties' + err;
+        }
+        //     result = POTNameForBinding;
+    } catch (e) {
+        message = ScannedPOT + ' failed to create, err is : ' + e;
+    }
+}
+
+result = message;
+]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="enableBRSP"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[if(check){
+	// result: INFOTABLE dataShape: "QueryBrspDS"
+var result =  Things["PostgreSQL"].QueryBRSP();
+}]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="GetIndustrialThingArray"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[var tempTable;
+// result: INFOTABLE dataShape: "GenericStringList"
+tempTable = Things["EngineIndustrialConnection"].GetIndustrialThings({
+        maxItems: undefined /* NUMBER */
+    });
+
+var val;
+var tableLength = tempTable.rows.length;
+var IndustrialThingsArray = [];
+for (var x = 0; x < tableLength; x++) {
+    var row = tempTable.rows[x];
+    val = row.item; //extract val from infoTable successful, built-in dataShape columnValue is item.
+//    if(val.toString().substring(0,3)==='POT'){
+    	IndustrialThingsArray.push(val);
+//    }
+//    IndustrialThingsArray.push(val);
+    //logger.info(val);
+    
+}
+//var myJsonString = JSON.stringify(IndustrialThingsArray);
+result = IndustrialThingsArray;
+
+//output: if use this funciton, output is a array object. But in here we can see as a array.
+
+
+
+
+
+
+]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="getPOTinProj"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[//extend from me.GetPOTsequenceBySearch
+var tableLength=me.GetPOTsequenceBySearch().array.length;
+var temp;
+var POTinProjArray=[];
+for(var i = 0;i<tableLength;i++){
+	POTinProjArray.push(me.GetPOTsequenceBySearch().array[i]);
+}
+var result = POTinProjArray;]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="getPOTRemoteProperties"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[//var result =  Things["EngineIndustrialConnection"].BrowseGroups({
+//	filter: undefined /* STRING */,
+//	path: 'comm' /* STRING */
+//});
+
+var path = 'comm.'+PotName;
+
+// result: INFOTABLE dataShape: "IndustrialItems"
+var result =  Things["EngineIndustrialConnection"].BrowseItems({
+	filter: undefined /* STRING */,
+	path: path /* STRING */
+});]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="GetPOTsequence"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[// result: JSON
+var temp=  me.ScanPOT();
+var tempLength =temp.array.length;
+var seq = [];
+
+for(var i = 0;i<tempLength ;i++ ){
+	seq.push(temp.array[i]);
+}
+result = seq;
+
+
+]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="GetPOTsequenceBySearch"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[//orirginal function search thing in Proj
+var showData=[];
+var params = {
+	maxItems: undefined /* NUMBER */,
+	nameMask: "*POT_*" /* STRING */,
+	type: 'Thing' /* STRING */,
+	tags: undefined /* TAGS */
+};
+// result: INFOTABLE dataShape: RootEntityList
+var temp = Resources["EntityServices"].GetEntityList(params);
+
+var tableLength = temp.rows.length;
+for (var x=0; x < tableLength; x++) {
+    var row = temp.rows[x];
+    if(row.name.search("POT_c")===-1){
+        showData.push(row.name);
+    }
+}
+result = showData;
+
+
+
+]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="GreenOrRedPOT"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[    var result =false;
+try{
+  
+try {
+		logger.error("API : GreenOrRedPOT,input.inputPOTName ="+inputPOTName+" result="+result);
+
+    // f1
+    var tempArrayString = '';
+    var ToBeevalueString = '';
+  
+    var POTsExistInProjJSON = me.GetPOTsequenceBySearch();
+    var length = POTsExistInProjJSON.array.length;
+
+    //func2
+    var POTsExistInKepwareJSON = me.ScanPOT();
+    var length2 = POTsExistInKepwareJSON.array.length;
+
+    //f1 content
+    for (var i = 0; i < length; i++) {
+        tempArrayString = POTsExistInProjJSON.array[i] + '--';
+        ToBeevalueString += tempArrayString;
+
+    }
+    //result = ToBeevalueString;
+
+    var tempArrayString2 = '';
+    var ToBeevalueString2 = '';
+    //f2 content
+    for (var k = 0; k < length2; k++) {
+        tempArrayString2 = POTsExistInKepwareJSON.array[k] + '--';
+        ToBeevalueString2 += tempArrayString2;
+    }
+
+    if (me.testGateWayConnnection()) {
+        if (ToBeevalueString2.indexOf(inputPOTName.substring(4)) !== -1 && ToBeevalueString2.indexOf(inputPOTName.substring(4)) !== -1) {
+            result = true;
+        } else {
+            result = false;
+        }
+    } else {
+        result = false;
+    }
+
+} catch (e) {
+    result = false; //no connection
+}
+
+}finally{
+logger.error("API : GreenOrRedPOT,input.inputPOTName ="+inputPOTName+" result="+result);
+}]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="MessageTableFetchTop5"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[var result;
+//get data from datatable and put into a infotable: emptyTable
+var params = {
+    infoTableName: "InfoTable",
+    dataShapeName: "MessageQueneDS"
+};
+// CreateInfoTableFromDataShape(infoTableName:STRING("InfoTable"), dataShapeName:STRING):INFOTABLE(MessageQueneDS)
+var emptyTable = Resources["InfoTableFunctions"].CreateInfoTableFromDataShape(params);
+
+var table = Things['MessageTable'].GetDataTableEntries();
+var tableLength = table.rows.length > 5 ? 5 : table.rows.length;
+for (var x = 0; x < tableLength; x++) {
+    var row = table.rows[x];
+    emptyTable.AddRow({
+        'TimeStamp': row.TimeStamp,
+        'Message': row.Message
+    });
+}
+
+//Query for ascending time
+var query = {
+    "sorts": [{
+            "fieldName": "TimeStamp",
+            "isAscending": false, //here is the key
+        }, {
+            "fieldName": "Plant"
+        }
+    ]
+};
+var params4 = {
+    t: emptyTable /* INFOTABLE */,
+    query: query
+};
+result = Resources["InfoTableFunctions"].Query(params4);
+]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="MiscRemoteProperty_RemoveBinding"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[ var POTnumber = POTName.substring(4);
+
+var POTNameForBind = 'POT.'+POTnumber;
+var POTNameForPOTThingName = 'POT_'+POTnumber;
+
+var propertise_buffer_in_crc = 'comm_POT_buffer_in_crc';  
+    try{
+    	Things[POTNameForPOTThingName].RemoveRemotePropertyBinding({
+        	propertyName: propertise_buffer_in_crc /* STRING */
+    	});
+        result = '1:remove buffer_in_crc';
+    }catch(err){
+    	result = err;
+    }  
+//1--------------------------------------------------remove buffer_in_crc  end      
+var propertise_comm_POT_buffer_in_msg_id = 'comm_POT_buffer_in_msg_id'; 
+    try{
+    	Things[POTNameForPOTThingName].RemoveRemotePropertyBinding({
+        	propertyName: propertise_comm_POT_buffer_in_msg_id /* STRING */
+    	});
+        result = '2:remove comm_POT_buffer_in_msg_id';
+    }catch(err){
+    	result = err;
+    }  
+//2--------------------------------------------------remove comm_POT_buffer_in_msg_id  end
+var propertise_comm_POT_buffer_in_msg_id_cfrn = 'comm_POT_buffer_in_msg_id_cfrn';  
+    try{
+    	Things[POTNameForPOTThingName].RemoveRemotePropertyBinding({
+        	propertyName: propertise_comm_POT_buffer_in_msg_id_cfrn /* STRING */
+    	});
+        result = '3:remove comm_POT_buffer_in_msg_id_cfrn';
+    }catch(err){
+    	result = err;
+    }  
+//3--------------------------------------------------remove comm_POT_buffer_in_msg_id_cfrn  end
+
+
+var propertise_comm_POT_buffer_out_crc = 'comm_POT_buffer_out_crc';   
+    try{
+    	Things[POTNameForPOTThingName].RemoveRemotePropertyBinding({
+        	propertyName: propertise_comm_POT_buffer_out_crc /* STRING */
+    	});
+        result = '4:remove comm_POT_buffer_out_crc';
+    }catch(err){
+    	result = err;
+    }  
+//4--------------------------------------------------remove comm_POT_buffer_out_crc  end
+
+var propertise_comm_POT_buffer_out_msg_id = 'comm_POT_buffer_out_msg_id';     
+try{
+    	Things[POTNameForPOTThingName].RemoveRemotePropertyBinding({
+        	propertyName: propertise_comm_POT_buffer_out_msg_id /* STRING */
+    	});
+        result = '5:remove comm_POT_buffer_out_msg_id';
+    }catch(err){
+    	result = err;
+    }  
+//5--------------------------------------------------remove comm_POT_buffer_out_msg_id  end
+var propertise_comm_POT_buffer_out_msg_id_cfrn = 'comm_POT_buffer_out_msg_id_cfrn';    
+try{
+    	Things[POTNameForPOTThingName].RemoveRemotePropertyBinding({
+        	propertyName: propertise_comm_POT_buffer_out_msg_id_cfrn /* STRING */
+    	});
+        result = '6:remove comm_POT_buffer_out_msg_id_cfrn';
+    }catch(err){
+    	result = err;
+    }  
+//6--------------------------------------------------remove comm_POT_buffer_out_msg_id_cfrn  end
+
+
+
+ 
+
+]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="MiscRemotePropertyBinding"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[var POTnumber = POTName.substring(4);
+
+var POTNameForBind = 'POT.'+POTnumber;
+var POTNameForPOTThingName = 'POT_'+POTnumber;
+
+
+
+var propertise_buffer_in_crc = 'comm_POT_buffer_in_crc';   
+var TagAddress_buffer_in_crc = 'comm.'+POTNameForBind+'.buffer_in_crc';
+try{
+        Things[POTNameForPOTThingName].SetRemotePropertyBinding({
+        propertyName: propertise_buffer_in_crc /* STRING */,
+        pushThreshold: 0 /* NUMBER */,
+        aspects: {
+            "industrialDataType": "Word",
+            "tagAddress": TagAddress_buffer_in_crc,
+            "scanRate": 1000,
+            "tagType": "Static",
+            "startType": "readEdgeValue",
+            "source": "",
+            "dataShape": ""
+        } /* JSON */,
+        foldType: 'NONE' /* STRING */,
+        sourcePropertyName: undefined /* STRING */,
+        timeout: 0 /* INTEGER */,
+        pushType: 'VALUE' /* STRING */,
+        cacheTime: undefined /* INTEGER */
+    });       
+        result = '1:bind buffer_in_crc ok!';
+    }catch(err){
+        result = err;
+    }   
+//1--------------------------------------------------------------------------bind buffer_in_crc end
+var propertise_comm_POT_buffer_in_msg_id = 'comm_POT_buffer_in_msg_id';   
+var TagAddress_comm_POT_buffer_in_msg_id = 'comm.'+POTNameForBind+'.buffer_in_msg_id';
+try{
+        Things[POTNameForPOTThingName].SetRemotePropertyBinding({
+        propertyName: propertise_comm_POT_buffer_in_msg_id /* STRING */,
+        pushThreshold: 0 /* NUMBER */,
+        aspects: {
+            "industrialDataType": "Long",
+            "tagAddress": TagAddress_comm_POT_buffer_in_msg_id,
+            "scanRate": 1000,
+            "tagType": "Static",
+            "startType": "readEdgeValue",
+            "source": "",
+            "dataShape": ""
+        } /* JSON */,
+        foldType: 'NONE' /* STRING */,
+        sourcePropertyName: undefined /* STRING */,
+        timeout: 0 /* INTEGER */,
+        pushType: 'VALUE' /* STRING */,
+        cacheTime: undefined /* INTEGER */
+    });       
+        result = '2:bind comm_POT_buffer_in_msg_id ok!';
+    }catch(err){
+        result = err;
+    }  
+//2--------------------------------------------------------------------------bind comm_POT_buffer_in_msg_id end
+var propertise_comm_POT_buffer_in_msg_id_cfrn = 'comm_POT_buffer_in_msg_id_cfrn';   
+var TagAddress_comm_POT_buffer_in_msg_id_cfrn = 'comm.'+POTNameForBind+'.buffer_in_msg_id_cfrn';
+try{
+        Things[POTNameForPOTThingName].SetRemotePropertyBinding({
+        propertyName: propertise_comm_POT_buffer_in_msg_id_cfrn /* STRING */,
+        pushThreshold: 0 /* NUMBER */,
+        aspects: {
+            "industrialDataType": "Long",
+            "tagAddress": TagAddress_comm_POT_buffer_in_msg_id_cfrn,
+            "scanRate": 1000,
+            "tagType": "Static",
+            "startType": "readEdgeValue",
+            "source": "",
+            "dataShape": ""
+        } /* JSON */,
+        foldType: 'NONE' /* STRING */,
+        sourcePropertyName: undefined /* STRING */,
+        timeout: 0 /* INTEGER */,
+        pushType: 'VALUE' /* STRING */,
+        cacheTime: undefined /* INTEGER */
+    });       
+        result = '3:bind comm_POT_buffer_in_msg_id_cfrn ok!';
+    }catch(err){
+        result = err;
+    }  
+//3--------------------------------------------------------------------------bind comm_POT_buffer_in_msg_id_cfrn end
+var propertise_comm_POT_buffer_out_crc = 'comm_POT_buffer_out_crc';   
+var TagAddress_comm_POT_buffer_out_crc = 'comm.'+POTNameForBind+'.buffer_out_crc';
+try{
+        Things[POTNameForPOTThingName].SetRemotePropertyBinding({
+        propertyName: propertise_comm_POT_buffer_out_crc /* STRING */,
+        pushThreshold: 0 /* NUMBER */,
+        aspects: {
+            "industrialDataType": "Word",
+            "tagAddress": TagAddress_comm_POT_buffer_out_crc,
+            "scanRate": 1000,
+            "tagType": "Static",
+            "startType": "readEdgeValue",
+            "source": "",
+            "dataShape": ""
+        } /* JSON */,
+        foldType: 'NONE' /* STRING */,
+        sourcePropertyName: undefined /* STRING */,
+        timeout: 0 /* INTEGER */,
+        pushType: 'VALUE' /* STRING */,
+        cacheTime: undefined /* INTEGER */
+    });       
+        result = '4:bind comm_POT_buffer_out_crc ok!';
+    }catch(err){
+        result = err;
+    }  
+//4--------------------------------------------------------------------------bind comm_POT_buffer_out_crc end
+var propertise_comm_POT_buffer_out_msg_id = 'comm_POT_buffer_out_msg_id';   
+var TagAddress_comm_POT_buffer_out_msg_id = 'comm.'+POTNameForBind+'.buffer_out_msg_id';
+try{
+        Things[POTNameForPOTThingName].SetRemotePropertyBinding({
+        propertyName: propertise_comm_POT_buffer_out_msg_id /* STRING */,
+        pushThreshold: 0 /* NUMBER */,
+        aspects: {
+            "industrialDataType": "Long",
+            "tagAddress": TagAddress_comm_POT_buffer_out_msg_id,
+            "scanRate": 1000,
+            "tagType": "Static",
+            "startType": "readEdgeValue",
+            "source": "",
+            "dataShape": ""
+        } /* JSON */,
+        foldType: 'NONE' /* STRING */,
+        sourcePropertyName: undefined /* STRING */,
+        timeout: 0 /* INTEGER */,
+        pushType: 'VALUE' /* STRING */,
+        cacheTime: undefined /* INTEGER */
+    });       
+        result = '5:bind comm_POT_buffer_out_msg_id ok!';
+    }catch(err){
+        result = err;
+    }  
+//5--------------------------------------------------------------------------bind comm_POT_buffer_out_msg_id end
+var propertise_comm_POT_buffer_out_msg_id_cfrn = 'comm_POT_buffer_out_msg_id_cfrn';   
+var TagAddress_comm_POT_buffer_out_msg_id_cfrn = 'comm.'+POTNameForBind+'.buffer_out_msg_id_cfrn';
+try{
+        Things[POTNameForPOTThingName].SetRemotePropertyBinding({
+        propertyName: propertise_comm_POT_buffer_out_msg_id_cfrn /* STRING */,
+        pushThreshold: 0 /* NUMBER */,
+        aspects: {
+            "industrialDataType": "Long",
+            "tagAddress": TagAddress_comm_POT_buffer_out_msg_id_cfrn,
+            "scanRate": 1000,
+            "tagType": "Static",
+            "startType": "readEdgeValue",
+            "source": "",
+            "dataShape": ""
+        } /* JSON */,
+        foldType: 'NONE' /* STRING */,
+        sourcePropertyName: undefined /* STRING */,
+        timeout: 0 /* INTEGER */,
+        pushType: 'VALUE' /* STRING */,
+        cacheTime: undefined /* INTEGER */
+    });       
+        result = '6:bind comm_POT_buffer_out_msg_id_cfrn ok!';
+    }catch(err){
+        result = err;
+    }  
+//6--------------------------------------------------------------------------bind comm_POT_buffer_out_msg_id_cfrn end]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="REMOVE_ALL_RemoteBinding"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[// result: STRING
+var result1 =  me.Buffer_in_data_RemoveBinding({
+	POTName: POTName /* STRING */
+});
+
+// result: STRING
+var result2 =  me.Buffer_in_id_data_RemoveBinding({
+	POTName: POTName /* STRING */
+});
+
+// result: STRING
+var result3 =  me.Buffer_out_data_RemoveBinding({
+	POTName: POTName /* STRING */
+});
+
+
+// result: STRING
+var result4 =  me.Buffer_out_id_RemoveBinding({
+	POTName: POTName /* STRING */
+});
+
+// result: STRING
+var result5 =  me.MiscRemoteProperty_RemoveBinding({
+	POTName: POTName /* STRING */
+});
+
+// result: STRING
+var result6 =  me.Sec_RemoveBinding({
+	POTName: POTName /* STRING */
+});
+
+var result  = result1+ ' ' + result2+ ' ' + result3+ ' ' + result4+ ' ' + result5+ ' ' + result6 ;
+]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="ScanPOT"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[var result;
+// result: INFOTABLE dataShape: "IndustrialGroups"
+
+var POTcollection = [];
+var temp1 =  Things["EngineIndustrialConnection"].BrowseGroups({
+	filter: undefined /* STRING */,
+	path: 'comm.POT' /* STRING */
+});
+
+//-----------------------------------------------------------------------
+
+var tableLength = temp1.rows.length;
+for (var x=0; x < tableLength; x++) {
+    
+    var row = temp1.rows[x];
+    var POTnumber =row.Name.substring(0);
+  	if(POTnumber!=='_System'){
+    	POTcollection.push(POTnumber);
+    }
+}
+result = POTcollection;// need to adjust output to JSON OBJ
+
+
+
+
+//var query =
+//    {
+//    "filters": {
+//        "type": "OR",
+//        "filters": [
+//            {
+//                "type": "EQ",
+//                "fieldName": "Name",
+//                "value": "POT001"
+//            },
+//            {
+//                "type": "EQ",
+//                "fieldName": "Name",
+//                "value": "POT002"
+//            }
+//        ]
+//    }
+//};
+//
+//var params = {
+//  t: temp /* INFOTABLE */,
+//  query: query  /* QUERY */
+//};
+//
+//var temp2 = Resources["InfoTableFunctions"].Query(params);
+//-----------------------------------------------------------------------
+
+
+//var tableLength = temp2.rows.length;
+//for (var x=0; x < tableLength; x++) {
+//    var row = temp2.rows[x];
+//    POTcollection.push(row.Name);
+//    //Your code here
+//}
+//
+//result = POTcollection;
+
+
+
+
+
+
+]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="Sec_BindingIteration"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[var number;
+var POTnumber = POTName.substring(4);
+
+var POTNameForBind = 'POT.'+POTnumber;
+var POTNameForPOTThingName = 'POT_'+POTnumber;
+
+for (var i = 1; i <= 14; i++) {
+    if (i > 10) {
+        number = '0' + i;
+    } else if (i === 10) {
+        number = '010';
+    } else {
+        number = '00' + i;
+    }
+    var TagAddress = 'comm.' + POTNameForBind + '.sec_' + number;
+    var PropertyName = 'comm_POT_sec_' + number;
+
+    try{
+    	Things[POTNameForPOTThingName].SetRemotePropertyBinding({
+        propertyName: PropertyName /* STRING */,
+        pushThreshold: 0 /* NUMBER */,
+        aspects: {
+            "industrialDataType": "Float",
+            "tagAddress": TagAddress,
+            "scanRate": 1000,
+            "tagType": "Static",
+            "startType": "readEdgeValue",
+            "source": "",
+            "dataShape": ""
+        } /* JSON */,
+        foldType: 'NONE' /* STRING */,
+        sourcePropertyName: undefined /* STRING */,
+        timeout: 0 /* INTEGER */,
+        pushType: 'ALWAYS' /* STRING */,
+        cacheTime: undefined /* INTEGER */
+    });
+        
+        result = 'bind all sec_ ok';
+    }catch(err){
+    	result = err;
+    }   
+}]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="Sec_RemoveBinding"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[for (var i = 1; i <= 14; i++) {
+    if (i > 10) {
+        number = '0' + i;
+    } else if (i === 10) {
+        number = '010';
+    } else {
+        number = '00' + i;
+    }
+    var PropertyName = 'comm_POT_sec_' + number;
+    try{
+    	Things[POTName].RemoveRemotePropertyBinding({
+        	propertyName: PropertyName /* STRING */
+    	});
+        result = 'remove all comm_POT_sec_';
+    }catch(err){
+    	result = err;
+    }  
+}
+]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="Set_POT_ALL_Remote_Binding"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[//here POTName  : POT.001
+
+//not fix yet 
+
+
+
+// result: STRING
+var result1 =  me.Buffer_in_BindingIteration({
+	POTName: POTName /* STRING */
+});
+
+// result: STRING
+var result2 =  me.Buffer_in_id_BindingIteration({
+	POTName: POTName /* STRING */
+});
+
+// result: STRING
+var result3 =  me.Buffer_out_data_BindingIteration({
+	POTName: POTName /* STRING */
+});
+
+// result: STRING
+var result4 =  me.Buffer_out_id_BindingIteration({
+	POTName: POTName /* STRING */
+});
+
+// result: STRING
+var result5 =  me.MiscRemotePropertyBinding({
+	POTName: POTName /* STRING */
+});
+
+// result: STRING
+var result6 =  me.Sec_BindingIteration({
+	POTName: POTName /* STRING */
+});
+
+var result  = POTName + result1+ ' ' + result2+ ' ' + result3+ ' ' + result4+ ' ' + result5+ ' ' + result6 ;
+]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="setPOTRemoteBinding"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[var number;
+for (var i = 0; i <= 10; i++) {
+    if (i > 10) {
+        number = '0' + i;
+    } else if (i === 10) {
+        number = '010';
+    } else {
+        number = '00' + i;
+    }
+    var TagAddress = 'comm.' + POTName + '.buffer_in_data_' + number;
+    var PropertyName = 'comm_POT_buffer_in_data_' + number;
+
+    try{
+    	Things[POTName].SetRemotePropertyBinding({
+        propertyName: PropertyName /* STRING */,
+        pushThreshold: 0 /* NUMBER */,
+        aspects: {
+            "industrialDataType": "Long",
+            "tagAddress": TagAddress,
+            "scanRate": 1000,
+            "tagType": "Static",
+            "startType": "readEdgeValue",
+            "source": "",
+            "dataShape": ""
+        } /* JSON */,
+        foldType: 'NONE' /* STRING */,
+        sourcePropertyName: undefined /* STRING */,
+        timeout: 0 /* INTEGER */,
+        pushType: 'VALUE' /* STRING */,
+        cacheTime: undefined /* INTEGER */
+    });
+        
+        result = 'bind okok!';
+    }catch(err){
+    	result = err;
+    }   
+}
+]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="SetRockWellProject"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[
+
+try{
+ 
+ Things[POTName].SetProjectName({
+	projectName: 'RockWellPoC' /* PROJECTNAME */
+});
+     Things[POTName].RestartThing();
+	Things[POTName].EnableThing();
+     result = 'ok';
+ }catch(e){
+ result = e;
+ }
+
+
+
+
+
+
+]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="TestAddDataTable"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[//works!
+try{
+	var values = Things["MessageTable"].CreateValues();
+	values.TimeStamp = new Date(); //LOCATION
+	values.Message = inputMessage;
+	var params = {
+ 	 sourceType: undefined /* STRING */,
+  	 values: values /* INFOTABLE*/,
+  	 location: undefined /* LOCATION */,
+ 	 source: undefined /* STRING */,
+ 	 tags: undefined /* TAGS */
+};
+// result: STRING
+	Things["MessageTable"].AddDataTableEntry(params);
+    result = 'ok';
+}catch(e){
+     result = e;
+}
+
+
+]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="TestAddProperties"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[
+
+
+me.create1Thing({
+	TestInputPOTName: undefined /* STRING */
+});]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="TestBind"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[Things[POTName].SetRemotePropertyBinding({
+	propertyName: 'comm_POT_buffer_in_data_011' /* STRING */,
+	pushThreshold: 0 /* NUMBER */,
+	aspects: {
+                "industrialDataType": "Long",
+                "tagAddress": "comm.POT002.buffer_in_data_011",
+                "scanRate": 1000,
+                "tagType": "Static",
+                "startType": "readEdgeValue",
+                "source": "",
+                "dataShape": ""
+            } /* JSON */,
+	foldType: 'NONE' /* STRING */,
+	sourcePropertyName: undefined /* STRING */,
+	timeout: 0 /* INTEGER */,
+	pushType: 'VALUE' /* STRING */,
+	cacheTime: undefined /* INTEGER */
+});]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="TestCreate40POTs"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[//works!
+var POTName;
+
+for (var i = 5; i <= QuantityOfPOTs; i++) {
+
+    if (i > 10) {
+        POTName = 'POT_0' + i;
+    } else if (i > 99) {
+        POTName = 'POT_' + i;
+    } else {
+        POTName = 'POT_00' + i;
+    }
+    try {
+        // result: STRING
+        me.create1Thing({
+            TestInputPOTName: POTName /* STRING */
+        });
+        result = 'ok';
+    } catch (err) {
+        result = err;
+    }
+}
+]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="TestCreateTemplate"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[
+var params = {
+	name: "EngineQTemplate" /* STRING */,
+	description: "created EngineQTemplate" /* STRING */,
+	thingTemplateName: "RemoteThing" /* THINGTEMPLATENAME */,
+	tags: undefined /* TAGS */
+};
+
+// no return
+Resources["EntityServices"].CreateThingTemplate(params);
+
+]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="TestCreateThing"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[
+var params = {
+	name: ThingName /* STRING */,
+	description: "This is created thing with specific ThingTemplate" /* STRING */,
+	thingTemplateName: addTemplate /* THINGTEMPLATENAME */,
+	tags: undefined /* TAGS */
+};
+
+// no return
+Resources["EntityServices"].CreateThing(params);
+
+]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="testGateWayConnnection"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[try{
+    result=Things["EngineIndustrialConnection"].isConnected;
+}catch(e){
+	result = false;
+}
+]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="TestGetBoundRemoteThing"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[
+var params = {
+	maxItems: undefined /* NUMBER */
+};
+
+// result: INFOTABLE dataShape: DeviceStatus
+var result = Resources["DeviceFunctions"].GetBoundRemoteThings(params);
+
+]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="testPlus0"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[var number;
+var numberArray = [];
+var result;
+for (var i = 0; i <= 30; i++) {
+
+    if (i > 10) {
+        number = '0' + i;
+    } else if (i === 10) {
+        number = '010';
+    } else {
+        number = '00' + i;
+    }
+    numberArray.push(number);
+    // logger.info(number);
+}
+result = numberArray;]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="testScan"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[// result: STRING
+var result ;
+// if output from me.ScanPOT() is array, then here the show ["  POT..., so we need to adjust called function output format is JSON. then fetch JSON Object
+var POTCollectionJSONobj =  me.ScanPOT();
+result = POTCollectionJSONobj.array.length;
+//result = POTCollectionJSONobj.array[0];
+//result = POTCollectionJSONobj.array[1];
+//test successful!
+]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="UpdateIndustrialBinding"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[var result;
+//use setProperties function instead of this one.
+try{
+	Things[IndustrialThingName].IndustrialThing = 'EngineIndustrialConnection';
+    result = "update ok";
+}catch(e){
+    result = "update error" +e;
+}
+
+
+
+]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation></ServiceImplementations><Subscriptions/></ThingShape><PropertyBindings/><RemotePropertyBindings/><RemoteServiceBindings/><RemoteEventBindings/><AlertConfigurations/><ImplementedShapes/><ThingProperties/><ConfigurationChanges><ConfigurationChange changeAction="CREATE" changeReason="" timestamp="2020-04-28T09:02:55.563Z" user="Administrator"/></ConfigurationChanges></Thing></Things></Entities>

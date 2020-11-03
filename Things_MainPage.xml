@@ -1,0 +1,769 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><Entities build="b12" majorVersion="8" minorVersion="5" modelPersistenceProviderPackage="PostgresPersistenceProviderPackage" revision="0" schemaVersion="1050" universal=""><Things><Thing description="" documentationContent="" effectiveThingPackage="ConfiguredThing" enabled="true" homeMashup="" identifier="" lastModifiedDate="2020-04-28T09:02:55.691Z" name="MainPage" projectName="RockWellPoC" published="false" tags="Applications:RockWellPocExport" thingTemplate="GenericThing" valueStream=""><Owner name="Administrator" type="User"/><avatar/><DesignTimePermissions><Create/><Read/><Update/><Delete/><Metadata/></DesignTimePermissions><RunTimePermissions/><VisibilityPermissions><Visibility/></VisibilityPermissions><ConfigurationTableDefinitions/><ConfigurationTables/><ThingShape><PropertyDefinitions><PropertyDefinition aspect.cacheTime="0.0" aspect.dataChangeType="VALUE" aspect.isPersistent="true" baseType="NUMBER" category="" description="" isLocalOnly="false" name="MaximumForChart" ordinal="5"/><PropertyDefinition aspect.cacheTime="0.0" aspect.dataChangeType="VALUE" aspect.isPersistent="true" baseType="NUMBER" category="" description="" isLocalOnly="false" name="MinimumForChart" ordinal="6"/><PropertyDefinition aspect.cacheTime="0.0" aspect.dataChangeType="VALUE" aspect.dataShape="select" aspect.isPersistent="true" baseType="INFOTABLE" category="" description="" isLocalOnly="false" name="selectedItem" ordinal="4"/><PropertyDefinition aspect.cacheTime="0.0" aspect.dataChangeType="VALUE" aspect.isPersistent="true" baseType="STRING" category="" description="" isLocalOnly="false" name="TimeNow" ordinal="7"/><PropertyDefinition aspect.cacheTime="0.0" aspect.dataChangeType="VALUE" aspect.defaultValue="false" baseType="BOOLEAN" category="" description="" isLocalOnly="false" name="visible" ordinal="2"/><PropertyDefinition aspect.cacheTime="0.0" aspect.dataChangeType="VALUE" aspect.defaultValue="false" baseType="BOOLEAN" category="" description="" isLocalOnly="false" name="visible2" ordinal="3"/></PropertyDefinitions><ServiceDefinitions><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="AddSelectedItem"><ResultType aspect.dataShape="select" baseType="INFOTABLE" description="" name="result" ordinal="0"/><ParameterDefinitions><FieldDefinition aspect.dataShape="select" baseType="INFOTABLE" description="" name="input" ordinal="1"/></ParameterDefinitions></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="BodyDroDwonListSection"><ResultType aspect.dataShape="select" baseType="INFOTABLE" description="" name="result" ordinal="0"/><ParameterDefinitions/></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="DroDwonListSection"><ResultType aspect.dataShape="select" baseType="INFOTABLE" description="" name="result" ordinal="0"/><ParameterDefinitions/></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="DropDownListMachine"><ResultType aspect.dataShape="select" baseType="INFOTABLE" description="" name="result" ordinal="0"/><ParameterDefinitions/></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="ForTree"><ResultType aspect.dataShape="newTreeDS" baseType="INFOTABLE" description="" name="result" ordinal="0"/><ParameterDefinitions/></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="LocalTime"><ResultType baseType="STRING" description="" name="result" ordinal="0"/><ParameterDefinitions/></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="Page6AvailableParameters"><ResultType aspect.dataShape="select" baseType="INFOTABLE" description="" name="result" ordinal="0"/><ParameterDefinitions/></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="Page6BodyDropDownList"><ResultType aspect.dataShape="select" baseType="INFOTABLE" description="" name="result" ordinal="0"/><ParameterDefinitions/></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="Page6MyChoices"><ResultType aspect.dataShape="select" baseType="INFOTABLE" description="" name="result" ordinal="0"/><ParameterDefinitions/></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="Page7BodyGrid"><ResultType aspect.dataShape="Page7Body" baseType="INFOTABLE" description="" name="result" ordinal="0"/><ParameterDefinitions/></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="Page8FooterChart"><ResultType aspect.dataShape="Page8FooterChartDataShape" baseType="INFOTABLE" description="" name="result" ordinal="0"/><ParameterDefinitions/></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="Page8TestInfotable"><ResultType aspect.dataShape="SampleDataShapeForPage8" baseType="INFOTABLE" description="" name="result" ordinal="0"/><ParameterDefinitions/></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="PresentTime"><ResultType baseType="STRING" description="" name="result" ordinal="0"/><ParameterDefinitions/></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="QueryAlF3Addition"><ResultType baseType="JSON" description="" name="result" ordinal="0"/><ParameterDefinitions/></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="QueryBathHeight"><ResultType baseType="JSON" description="" name="result" ordinal="0"/><ParameterDefinitions/></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="QueryBathTemperature"><ResultType baseType="JSON" description="" name="result" ordinal="0"/><ParameterDefinitions/></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="QueryExcess_AlF3"><ResultType baseType="JSON" description="" name="result" ordinal="0"/><ParameterDefinitions/></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="QueryFe"><ResultType baseType="JSON" description="" name="result" ordinal="0"/><ParameterDefinitions/></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="QueryMetalHeight"><ResultType baseType="JSON" description="" name="result" ordinal="0"/><ParameterDefinitions/></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="QueryRcFactor"><ResultType baseType="JSON" description="" name="result" ordinal="0"/><ParameterDefinitions/></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="QuerySi"><ResultType baseType="JSON" description="" name="result" ordinal="0"/><ParameterDefinitions/></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="QuerySuperheat"><ResultType baseType="JSON" description="" name="result" ordinal="0"/><ParameterDefinitions/></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="RemoveSelectedItem"><ResultType baseType="NOTHING" description="" name="result" ordinal="0"/><ParameterDefinitions><FieldDefinition aspect.dataShape="select" baseType="INFOTABLE" description="" name="input" ordinal="1"/></ParameterDefinitions></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="Resistance"><ResultType aspect.dataShape="ResistanceDataShape" baseType="INFOTABLE" description="" name="result" ordinal="0"/><ParameterDefinitions/></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="SelectItemSortDown"><ResultType baseType="NUMBER" description="" name="result" ordinal="0"/><ParameterDefinitions><FieldDefinition aspect.dataShape="select" baseType="INFOTABLE" description="" name="input" ordinal="1"/></ParameterDefinitions></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="SelectItemSortUp"><ResultType aspect.dataShape="select" baseType="LONG" description="" name="result" ordinal="0"/><ParameterDefinitions><FieldDefinition aspect.dataShape="select" baseType="INFOTABLE" description="" name="input" ordinal="1"/></ParameterDefinitions></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="SetUpMaximumAndMinimum"><ResultType baseType="NOTHING" description="" name="result" ordinal="0"/><ParameterDefinitions><FieldDefinition baseType="NUMBER" description="" name="Maximum" ordinal="1"/><FieldDefinition baseType="NUMBER" description="" name="Minimum" ordinal="2"/></ParameterDefinitions></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="Test0406"><ResultType baseType="STRING" description="" name="result" ordinal="0"/><ParameterDefinitions/></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="TestDropDownWithIcon"><ResultType aspect.dataShape="testWithIcon" baseType="INFOTABLE" description="" name="result" ordinal="0"/><ParameterDefinitions/></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="TimeSeriesChart"><ResultType aspect.dataShape="SampleDataDatashape" baseType="INFOTABLE" description="" name="result" ordinal="0"/><ParameterDefinitions/></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="visibleTrue"><ResultType baseType="BOOLEAN" description="" name="result" ordinal="0"/><ParameterDefinitions/></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="visibletrue2"><ResultType baseType="BOOLEAN" description="" name="result" ordinal="0"/><ParameterDefinitions/></ServiceDefinition></ServiceDefinitions><EventDefinitions/><ServiceMappings/><ServiceImplementations><ServiceImplementation description="" handlerName="Script" name="AddSelectedItem"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[var i=0;
+for(;i<input.length;i++){
+me.selectedItem.AddRow(input[i]);
+}
+]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="BodyDroDwonListSection"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[var params = {
+    infoTableName : "Infotable",
+    dataShapeName : "select"
+};
+
+var dropdown = Resources["InfoTableFunctions"].CreateInfoTableFromDataShape(params);
+
+
+dropdown.AddRow({select:"Statistics"});
+dropdown.AddRow({select: "Trace & Graph"});
+dropdown.AddRow({select: "Modify Parameters"});
+dropdown.AddRow({select: "Reports"});
+dropdown.AddRow({select: "Cancel"});
+result=dropdown.toJSON();]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="DroDwonListSection"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[var params = {
+    infoTableName : "Infotable",
+    dataShapeName : "select"
+};
+
+var dropdown = Resources["InfoTableFunctions"].CreateInfoTableFromDataShape(params);
+
+//dropdown.RemoveAllRows();
+//var newRow = new Object();
+//var newRow1 = new Object();
+//var newRow2 = new Object();
+//var newRow3 = new Object();
+//var newRow4 = new Object();
+//newRow.select = "Status";
+//newRow1.select="Statistics";
+//newRow2.select="Nodify Parameters";
+//newRow3.select="Trace & Graph";
+//newRow4.select="Cancel";
+dropdown.AddRow({select:"Status"});
+dropdown.AddRow({select: "Statistics"});
+dropdown.AddRow({select: "Nodify Parameters"});
+dropdown.AddRow({select: "Trace & Graph"});
+dropdown.AddRow({select: "Cancel"});
+result=dropdown.toJSON();]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="DropDownListMachine"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[var params = {
+    infoTableName : "Infotable",
+    dataShapeName : "select"
+};
+
+var dropdown = Resources["InfoTableFunctions"].CreateInfoTableFromDataShape(params);
+
+dropdown.AddRow({select:"Status"});
+dropdown.AddRow({select: "Statistics"});
+dropdown.AddRow({select: "Nodify Parameters"});
+dropdown.AddRow({select: "Reports"});
+dropdown.AddRow({select: "Cancel"});
+result=dropdown.toJSON();]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="ForTree"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[var params = {
+    infoTableName : "Infotable",
+    dataShapeName : "DataForTree"
+};
+
+//Adjust the formate of time
+function getMyDate(str) {
+    var oDate = new Date(str),
+    oYear = oDate.getFullYear(),
+    oMonth = oDate.getMonth()+1,
+    oDay = oDate.getDate(),
+    oHour = oDate.getHours(),
+    oMin = oDate.getMinutes(),
+    oSen = oDate.getSeconds(),
+    oTime =addZero(oHour) +':'+ addZero(oMin) +':'+addZero(oSen);
+    return oTime;
+}
+
+//add 0 for the time formate
+function addZero(num){
+    if(parseInt(num) < 10){
+        num = '0'+num;
+    }
+    return num;
+}
+
+
+
+// result: JSON
+var QueryBathTemperature =  me.QueryBathTemperature();
+
+// result: JSON
+var QueryExcess_AlF3 =  me.QueryExcess_AlF3();
+
+// result: JSON
+var QueryMetalHeight =  me.QueryMetalHeight();
+
+// result: JSON
+var QueryBathHeight =  me.QueryBathHeight();
+
+// result: JSON
+var QueryFe =  me.QueryFe();
+
+// result: JSON
+var QuerySi =  me.QuerySi();
+
+// result: JSON
+var QuerySuperheat =  me.QuerySuperheat();
+
+// result: JSON
+var QueryAlF3Addition =  me.QueryAlF3Addition();
+
+// result: JSON
+var QueryRcFactor =  me.QueryRcFactor();
+
+
+
+var dropdown = Resources["InfoTableFunctions"].CreateInfoTableFromDataShape(params);
+// result: INFOTABLE dataShape: "QueryBathTemperature"
+
+
+var Bath_temp = "<p style='color:'>Bath temp &nbsp&nbsp&nbsp&nbsp&nbsp<span>"+'   '+"[ "+getMyDate(QueryBathTemperature.rows[0].timestamp)+" ] "+"<span style='color:blue'>"+QueryBathTemperature.rows[0].data+"</span></span></p>";
+
+var Excess_AlF3 = "<p style='color:'>Excess AlF3  &nbsp&nbsp<span>"+"[ "+getMyDate(QueryExcess_AlF3.rows[0].timestamp)+" ] "+"<span style='color:blue'>"+QueryExcess_AlF3.rows[0].data+"</span></span></p>";
+var Metal_height = "<p style='color:'>Metal height  &nbsp&nbsp<span>"+"[ "+getMyDate(QueryMetalHeight.rows[0].timestamp)+" ] "+"<span style='color:blue'>"+QueryMetalHeight.rows[0].data+"</span></span></p>";
+
+var Bath_height = "<p style='color:'>Bath height  &nbsp&nbsp&nbsp<span>"+"[ "+getMyDate(QueryBathHeight.rows[0].timestamp)+" ] "+"<span style='color:blue'>"+QueryBathHeight.rows[0].data+"</span></span></p>";
+var Fe = "<p style='color:'>Fe  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span>"+"[ "+getMyDate(QueryFe.rows[0].timestamp)+" ] "+"<span style='color:blue'>"+QueryFe.rows[0].data+"</span></span></p>";
+var Si ="<p style='color:'>Si  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span>"+"[ "+getMyDate(QuerySi.rows[0].timestamp)+" ] "+"<span style='color:blue'>"+QuerySi.rows[0].data+"</span></span></p>";
+var Superheat = "<p style='color:'>Superheat &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <span>"+"[ "+getMyDate(QuerySuperheat.rows[0].timestamp)+" ] "+"<span style='color:blue'>"+QuerySuperheat.rows[0].data+"</span></span></p>";
+var AlF3_addition =  "<p style='color:'>AlF3 addition &nbsp&nbsp&nbsp <span>"+"[ "+getMyDate(QueryAlF3Addition.rows[0].timestamp)+" ] "+"<span style='color:blue'>"+QueryAlF3Addition.rows[0].data+"</span></span></p>";
+var RC_factor = "<p style='color:'>RC factor &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <span>"+"[ "+getMyDate(QueryRcFactor.rows[0].timestamp)+" ] "+"<span style='color:blue'>"+QueryRcFactor.rows[0].data+"</span></span></p>";
+
+
+
+
+
+dropdown.AddRow({Type:"",Label:Bath_temp ,Data:"<h1>123</h1>"});
+dropdown.AddRow({Type:"",Label:Excess_AlF3,Data:"<h1>243</h1>"});
+dropdown.AddRow({Type:"",Label:Metal_height,Data:"<h1>456</h1>"});
+dropdown.AddRow({Type:"",Label:Bath_height,Data:"<h1>456</h1>"});
+dropdown.AddRow({Type:"",Label:Fe,Data:"<h1>456</h1>"});
+dropdown.AddRow({Type:"",Label:Si,Data:"<h1>456</h1>"});
+dropdown.AddRow({Type:"",Label:Superheat,Data:"<h1>456</h1>"});
+dropdown.AddRow({Type:"",Label:AlF3_addition,Data:"<h1>456</h1>"});
+dropdown.AddRow({Type:"",Label:RC_factor,Data:"<h1>456</h1>"});
+
+
+for(i=1;i<=5;i++){
+dropdown.AddRow({Type:Bath_temp,Label:"[ "+getMyDate(QueryBathTemperature.rows[i].timestamp)+" ]  "+QueryBathTemperature.rows[i].data,Data:110});
+dropdown.AddRow({Type:Excess_AlF3,Label: "[ "+getMyDate(QueryExcess_AlF3.rows[i].timestamp)+" ]  "+QueryExcess_AlF3.rows[i].data,Data:210});
+dropdown.AddRow({Type:Metal_height,Label: "[ "+getMyDate(QueryMetalHeight.rows[i].timestamp)+" ]  "+QueryMetalHeight.rows[i].data,Data:310});
+dropdown.AddRow({Type:Bath_height,Label: "[ "+getMyDate(QueryBathHeight.rows[i].timestamp)+" ]  "+QueryBathHeight.rows[i].data,Data:310});
+dropdown.AddRow({Type:Fe,Label: "[ "+getMyDate(QueryFe.rows[i].timestamp)+" ]  "+QueryFe.rows[i].data,Data:310});
+dropdown.AddRow({Type:Si,Label: "[ "+getMyDate(QuerySi.rows[i].timestamp)+" ]  "+QuerySi.rows[i].data,Data:310});
+dropdown.AddRow({Type:Superheat,Label: "[ "+getMyDate(QuerySuperheat.rows[i].timestamp)+" ]  "+QuerySuperheat.rows[i].data,Data:310});
+dropdown.AddRow({Type:AlF3_addition,Label: "[ "+getMyDate(QueryAlF3Addition.rows[i].timestamp)+" ]  "+QueryAlF3Addition.rows[i].data,Data:310});
+dropdown.AddRow({Type:RC_factor,Label: "[ "+getMyDate(QueryRcFactor.rows[i].timestamp)+" ]  "+QueryRcFactor.rows[i].data,Data:310});
+}
+
+
+result=dropdown.toJSON();]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="LocalTime"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[function getMyDate(str) {
+    var oDate = new Date(str),
+    oYear = oDate.getFullYear(),
+    oMonth = oDate.getMonth()+1,
+    oDay = oDate.getDate(),
+    oHour = oDate.getHours(),
+    oMin = oDate.getMinutes(),
+    oSen = oDate.getSeconds(),
+    oTime = oYear +'-'+ addZero(oMonth) +'-'+ addZero(oDay) +' '+ addZero(oHour) +':'+
+addZero(oMin) +':'+addZero(oSen);
+    return oTime;
+}
+function addZero(num){
+    if(parseInt(num) < 10){
+        num = '0'+num;
+    }
+    return num;
+}
+var dt = new Date();
+var utc = dt.getTime() + (dt.getTimezoneOffset() * 60000);
+var dateTime = getMyDate(utc + (3600000*3));
+
+result=dateTime;
+
+//me.TimeNow=dateTime;]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="Page6AvailableParameters"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[var params = {
+    infoTableName : "Infotable",
+    dataShapeName : "select"
+};
+
+var dropdown = Resources["InfoTableFunctions"].CreateInfoTableFromDataShape(params);
+
+var arr = ["Smooth_Resistance","Pot_Voltage","Pot_Current","Up_Movement","Down_Movement","Aug_UF_Search_Time","No_of_EOW_UF_Cycle","No_of_Tracks","Track_Duration"];
+
+var i = 0 ;
+for(;i < arr.length;i++){
+	if(me.selectedItem.Find({select:arr[i]}) === null)
+		dropdown.AddRow({select:arr[i]});
+}
+//dropdown.AddRow({select:"Smooth_Resistance"});
+//dropdown.AddRow({select: "Pot_Voltage"});
+//dropdown.AddRow({select: "Pot_Current"});
+//dropdown.AddRow({select: "Up_Movement"});
+//dropdown.AddRow({select: "Down_Movement"});
+//dropdown.AddRow({select: "Aug_UF_Search_Time"});
+//dropdown.AddRow({select: "No_of_EOW_UF_Cycle"});
+//dropdown.AddRow({select: "No_of_Tracks"});
+//dropdown.AddRow({select: "Track_Duration"});
+
+result=dropdown.toJSON();]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="Page6BodyDropDownList"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[var params = {
+    infoTableName : "Infotable",
+    dataShapeName : "select"
+};
+
+var dropdown = Resources["InfoTableFunctions"].CreateInfoTableFromDataShape(params);
+
+dropdown.AddRow({select:"PF"});
+dropdown.AddRow({select: "PF1"});
+dropdown.AddRow({select: "PF2"});
+dropdown.AddRow({select: "PF3"});
+dropdown.AddRow({select: "PF4"});
+result=dropdown.toJSON();]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="Page6MyChoices"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[
+var dropdown = me.selectedItem;
+
+result=dropdown.toJSON();]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="Page7BodyGrid"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[var params = {
+    infoTableName : "Infotable",
+    dataShapeName : "Page7Body"
+};
+
+var dropdown = Resources["InfoTableFunctions"].CreateInfoTableFromDataShape(params);
+
+dropdown.AddRow({Date:"19/2",BRSP:"5.48",CRSP:"5.57",TotalDumps:"45",BFT:"15",TheoreticalBFT:"17",AIF3Dumps:"9"});
+dropdown.AddRow({Date: "19/1",BRSP:"5.48",CRSP:"5.65",TotalDumps:"45",BFT:"15",TheoreticalBFT:"17",AIF3Dumps:"15"});
+dropdown.AddRow({Date: "18/3",BRSP:"5.48",CRSP:"5.48",TotalDumps:"45",BFT:"15",TheoreticalBFT:"17",AIF3Dumps:"15"});
+dropdown.AddRow({Date: "18/2",BRSP:"5.48",CRSP:"5.48",TotalDumps:"45",BFT:"15",TheoreticalBFT:"17",AIF3Dumps:"15"});
+dropdown.AddRow({Date: "18/1",BRSP:"5.48",CRSP:"5.56",TotalDumps:"45",BFT:"15",TheoreticalBFT:"17",AIF3Dumps:"15"});
+dropdown.AddRow({Date: "17/3",BRSP:"5.48",CRSP:"5.64",TotalDumps:"45",BFT:"15",TheoreticalBFT:"17",AIF3Dumps:"12"});
+dropdown.AddRow({Date: "17/2",BRSP:"5.48",CRSP:"5.48",TotalDumps:"45",BFT:"15",TheoreticalBFT:"17",AIF3Dumps:"12"});
+dropdown.AddRow({Date: "17/1",BRSP:"5.48",CRSP:"5.48",TotalDumps:"45",BFT:"15",TheoreticalBFT:"17",AIF3Dumps:"13"});
+dropdown.AddRow({Date: "16/3",BRSP:"5.48",CRSP:"5.57",TotalDumps:"45",BFT:"15",TheoreticalBFT:"17",AIF3Dumps:"13"});
+result=dropdown.toJSON();]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="Page8FooterChart"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[
+var params = {
+	infoTableName: "test1" /* STRING */,
+	dataShapeName: "Page8FooterChartDataShape" /* DATASHAPENAME */
+};
+
+// result: INFOTABLE
+var result = Resources["InfoTableFunctions"].CreateInfoTableFromDataShape(params);
+
+// SampleDataShapeForPage8 entry object
+var new1 = new Object();
+var new2 = new Object();
+var new3 = new Object();
+var new4 = new Object();
+var new5 = new Object();
+var new6 = new Object();
+var new7 = new Object();
+var new8 = new Object();
+var new9 = new Object();
+var new10 = new Object();
+var new11 = new Object();
+var new12 = new Object();
+var new13 = new Object();
+var new14 = new Object();
+var new15 = new Object();
+var new16 = new Object();
+var new17 = new Object();
+var new18 = new Object();
+var new19 = new Object();
+var new20 = new Object();
+var new21 = new Object();
+var new22 = new Object();
+var new23 = new Object();
+var new24 = new Object();
+var new25 = new Object();
+var new26 = new Object();
+var new27 = new Object();
+var new28 = new Object();
+var new29 = new Object();
+var new30 = new Object();
+new1.AudioMso = -1; // STRING
+new2.AudioMso = 4;
+new3.AudioMso = 4;
+new4.AudioMso = 4;
+new5.AudioMso = 4;
+new6.AudioMso = 4;
+new7.AudioMso = -1;
+new8.AudioMso = -1;
+new9.AudioMso = -1;
+new10.AudioMso = 4;
+new11.AudioMso = 4;
+new12.AudioMso = 4;
+new13.AudioMso = 4;
+new14.AudioMso = 4;
+new15.AudioMso = 4;
+new16.AudioMso = 4;
+new17.AudioMso = 4;
+new18.AudioMso = -1;
+new19.AudioMso = 4;
+new20.AudioMso = 4;
+new21.AudioMso = 4;
+new22.AudioMso = -1;
+new23.AudioMso = -1;
+new24.AudioMso = 4;
+new25.AudioMso = 4;
+new26.AudioMso = 4;
+new27.AudioMso = 4;
+new28.AudioMso = 4;
+new29.AudioMso = 4;
+new30.AudioMso = 4;
+new1.time = 1585699200000;//4/1    
+new2.time = 1585785600000;//4/2
+new3.time = 1585872000000;//4/3
+new4.time = 1585958400000;//4/4
+new5.time = 1586044800000;//4/5
+new6.time = 1586131200000;//4/6
+new7.time = 1586217600000;//4/7
+new8.time = 1586304000000;//4/8
+new9.time = 1586390400000;//4/9
+new10.time = 1586476800000;//4/10
+new11.time = 1586563200000;//4/12
+new12.time = 1584230400000; //3/15
+new13.time = 1584316800000;//3/16
+new14.time = 1584403200000;//3/17
+new15.time = 1584489600000;//3/18
+new16.time = 1584576000000;//3/19
+new17.time = 1584662400000;//3/20
+new18.time =1583020800000;//3/1
+new19.time =1583107200964;//3/2
+new20.time =1583193600966;//3/3
+new21.time =1583280000968;//3/4
+new23.time =1583366400980;//3/5
+new24.time =1583452800982;//3/6
+new25.time =1583452800984;//3/7
+new26.time =1583625600986;//3/8
+new27.time =1583712000000;//3/9
+new28.time =1583798400002;//3/10
+new29.time =1583884800004;//3/11
+new30.time =1583971200006;//3/12
+//new2.time = 1563589076000;
+//new3.time = 1563596276000;
+//new4.time = 1563603476000;
+//new5.time = 1563610676000;
+//new6.time = 1563617876000;
+//new7.time = 1563625076000;
+//new8.time = 1563632276000;
+//new9.time = 1563639476000;
+//new10.time = 1563646676000;
+//new11.time = 1563653876000;
+//new12.time = 1563661076000;
+//new13.time = 1563668276000;
+//new14.time = 1563675476000;
+//new15.time = 1563682676000;
+//new16.time = 1563689876000;
+//new17.time = 1563697076000;
+new1.BtpBprBp = -1;
+new2.BtpBprBp = 3;
+new3.BtpBprBp = 3;
+new4.BtpBprBp = 3;
+new5.BtpBprBp = 3;
+new6.BtpBprBp = -1;
+new7.BtpBprBp = -1;
+new8.BtpBprBp = 3;
+new9.BtpBprBp = 3;
+new10.BtpBprBp = 3;
+new11.BtpBprBp = 3;
+new12.BtpBprBp = 3;
+new13.BtpBprBp = 3;
+new14.BtpBprBp = 3;
+new15.BtpBprBp = 3;
+new16.BtpBprBp = 3;
+new17.BtpBprBp = 3;
+new18.BtpBprBp = 3;
+new19.BtpBprBp = 3;
+new20.BtpBprBp = 3;
+new21.BtpBprBp = 3;
+new22.BtpBprBp = 3;
+new23.BtpBprBp = -1;
+new24.BtpBprBp = 3;
+new25.BtpBprBp = 3;
+new26.BtpBprBp = 3;
+new27.BtpBprBp = 3;
+new28.BtpBprBp = 3;
+new29.BtpBprBp = 3;
+new30.BtpBprBp = 3;
+
+new1.AEL = -1;
+new2.AEL = 1;
+new3.AEL = 1;
+new4.AEL = -1;
+new5.AEL = -1;
+new6.AEL = -1;
+new7.AEL = -1;
+new8.AEL = -1;
+new9.AEL = -1;
+new10.AEL = -1;
+new11.AEL = -1;
+new12.AEL = -1;
+new13.AEL = -1;
+new14.AEL = -1;
+new15.AEL = -1;
+new16.AEL = 1;
+new17.AEL = 1;
+new18.AEL = 1;
+new19.AEL = 1;
+new20.AEL = 1;
+new21.AEL = 1;
+new22.AEL = 1;
+new23.AEL = 1;
+new24.AEL = 1;
+new25.AEL = 1;
+new26.AEL = 1;
+new27.AEL = 1;
+new28.AEL = 1;
+new29.AEL = 1;
+new30.AEL = 1;
+
+
+new1.FD = -1;
+new2.FD = 2;
+new3.FD = 2;
+new4.FD = -1;
+new5.FD = -1;
+new6.FD = -1;
+new7.FD = -1;
+new8.FD = -1;
+new9.FD = -1;
+new10.FD = -1;
+new11.FD = -1;
+new12.FD = -1;
+new13.FD = -1;
+new14.FD = -1;
+new15.FD = -1;
+new16.FD = 2;
+new17.FD = 2;
+new18.FD = 2;
+new19.FD = 2;
+new20.FD = 2;
+new21.FD = 2;
+new22.FD = 2;
+new23.FD = 2;
+new24.FD = 2;
+new25.FD = 2;
+new26.FD = 2;
+new27.FD = 2;
+new28.FD = 2;
+new29.FD = 2;
+new30.FD = 2;
+
+result.AddRow(new1);
+result.AddRow(new2);
+result.AddRow(new3);
+result.AddRow(new4);
+result.AddRow(new5);
+result.AddRow(new6);
+result.AddRow(new7);
+result.AddRow(new8);
+result.AddRow(new9);
+result.AddRow(new10);
+result.AddRow(new11);
+result.AddRow(new12);
+result.AddRow(new13);
+result.AddRow(new14);
+result.AddRow(new15);
+result.AddRow(new16);
+result.AddRow(new17);
+result.AddRow(new18);
+result.AddRow(new19);
+result.AddRow(new20);
+result.AddRow(new21);
+result.AddRow(new22);
+result.AddRow(new23);
+result.AddRow(new24);
+result.AddRow(new25);
+result.AddRow(new26);
+result.AddRow(new27);
+result.AddRow(new28);
+result.AddRow(new29);
+result.AddRow(new30);]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="Page8TestInfotable"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[
+var params = {
+	infoTableName: "test" /* STRING */,
+	dataShapeName: "SampleDataShapeForPage8" /* DATASHAPENAME */
+};
+
+// result: INFOTABLE
+var result = Resources["InfoTableFunctions"].CreateInfoTableFromDataShape(params);
+
+// SampleDataShapeForPage8 entry object
+var new1 = new Object();
+var new2 = new Object();
+var new3 = new Object();
+var new4 = new Object();
+var new5 = new Object();
+var new6 = new Object();
+var new7 = new Object();
+var new8 = new Object();
+var new9 = new Object();
+var new10 = new Object();
+var new11 = new Object();
+var new12 = new Object();
+var new13 = new Object();
+var new14 = new Object();
+var new15 = new Object();
+var new16 = new Object();
+var new17 = new Object();
+new1.count = 3.63; // STRING
+new2.count = 4.53;
+new3.count = 6.24;
+new4.count = 5.85;
+new5.count = 7.26;
+new6.count = 1.27;
+new7.count = 2.38;
+new8.count = 3.68;
+new9.count = 4.21;
+new10.count = 3.89;
+new11.count = 6.18;
+new12.count = 5.53;
+new13.count = 4.36;
+new14.count = 6.35;
+new15.count = 3.21;
+new16.count = 7.21;
+new17.count = 4.69;
+new1.time = 1585699200000;//4/1    
+new2.time = 1585785600000;//4/2
+new3.time = 1585872000000;//4/3
+new4.time = 1585958400000;//4/4
+new5.time = 1586044800000;//4/5
+new6.time = 1586131200000;//4/6
+new7.time = 1586217600000;//4/7
+new8.time = 1586304000000;//4/8
+new9.time = 1586390400000;//4/9
+new10.time = 1586476800000;//4/10
+new11.time = 1586563200000;//4/12
+new12.time = 1584230400000; //3/15
+new13.time = 1584316800000;//3/16
+new14.time = 1584403200000;//3/17
+new15.time = 1584489600000;//3/18
+new16.time = 1584576000000;//3/19
+new17.time = 1584662400000;//3/20
+new1.count2 = -52;
+new2.count2 = -45;
+new3.count2 = -10;
+new4.count2 = 31;
+new5.count2 = 35.2;
+new6.count2 = -20;
+new7.count2 = 8.42;
+new8.count2 = 4.23;
+new9.count2 = 26.52;
+new10.count2 = 42.3;
+new11.count2 = -60;
+new12.count2 = 36;
+new13.count2 = 35;
+new14.count2 = 30.2;
+new15.count2 = -12;
+new16.count2 = 24.36;
+new17.count2 = 56.12;
+new1.count3 = 2.369;
+new2.count3 = 2.453;
+new3.count3 = 3.245;
+new4.count3 = 7.454;
+new5.count3 = 4.354;
+new6.count3 = 5.325;
+new7.count3 = 3.644;
+new8.count3 = 4.231;
+new9.count3 = 3.654;
+new10.count3 = 4.251;
+new11.count3 = 6.312;
+new12.count3 = 2.354;
+new13.count3 = 3.654;
+new14.count3 = 5.321;
+new15.count3 = 4.231;
+new16.count3 = 6.354;
+new17.count3 = 1.654;
+result.AddRow(new1);
+result.AddRow(new2);
+result.AddRow(new3);
+result.AddRow(new4);
+result.AddRow(new5);
+result.AddRow(new6);
+result.AddRow(new7);
+result.AddRow(new8);
+result.AddRow(new9);
+result.AddRow(new10);
+result.AddRow(new11);
+result.AddRow(new12);
+result.AddRow(new13);
+result.AddRow(new14);
+result.AddRow(new15);
+result.AddRow(new16);
+result.AddRow(new17);]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="PresentTime"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[function getMyDate(str) {
+    var oDate = new Date(str),
+    oYear = oDate.getFullYear(),
+    oMonth = oDate.getMonth()+1,
+    oDay = oDate.getDate(),
+    oHour = oDate.getHours(),
+    oMin = oDate.getMinutes(),
+    oSen = oDate.getSeconds(),
+    oTime = oYear +'-'+ addZero(oMonth) +'-'+ addZero(oDay) +' '+ addZero(oHour) +':'+
+addZero(oMin) +':'+addZero(oSen);
+    return oTime;
+}
+function addZero(num){
+    if(parseInt(num) < 10){
+        num = '0'+num;
+    }
+    return num;
+}
+var dt = new Date();
+var utc = dt.getTime() + (dt.getTimezoneOffset() * 60000);
+var dateTime = getMyDate(utc + (3600000*8));
+
+//result=dateTime;
+var time=dateTime.substring(11);
+result=time;
+me.TimeNow=time;]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="QueryAlF3Addition"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[// result: INFOTABLE dataShape: "QueryBathTemperature"
+var QueryAlF3_addition =  Things["PostgreSQL"].QueryAlF3_addition();
+
+var result = QueryAlF3_addition.ToJSON();]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="QueryBathHeight"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[// result: INFOTABLE dataShape: "QueryBathTemperature"
+var QueryBathHeight =  Things["PostgreSQL"].QueryBathHeight();
+
+var result = QueryBathHeight.ToJSON();]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="QueryBathTemperature"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[// result: INFOTABLE dataShape: "QueryBathTemperature"
+var QueryBathTemperature =  Things["PostgreSQL"].QueryBathTemperature();
+
+var result= QueryBathTemperature.ToJSON();]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="QueryExcess_AlF3"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[// result: INFOTABLE dataShape: "QueryBathTemperature"
+var QueryExcess_AlF3 =  Things["PostgreSQL"].QueryExcess_AlF3();
+
+var result = QueryExcess_AlF3.ToJSON();]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="QueryFe"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[// result: INFOTABLE dataShape: "QueryBathTemperature"
+var QueryFe =  Things["PostgreSQL"].QueryFe();
+
+var result = QueryFe.ToJSON();]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="QueryMetalHeight"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[// result: INFOTABLE dataShape: "QueryBathTemperature"
+var QueryMetalHeight =  Things["PostgreSQL"].QueryMetalHeight();
+
+var result = QueryMetalHeight.ToJSON();]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="QueryRcFactor"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[// result: INFOTABLE dataShape: "QueryBathTemperature"
+var QueryRC_Factor =  Things["PostgreSQL"].QueryRC_Factor();
+
+var result = QueryRC_Factor.ToJSON();]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="QuerySi"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[// result: INFOTABLE dataShape: "QueryBathTemperature"
+var QuerySi =  Things["PostgreSQL"].QuerySi();
+
+var result = QuerySi.ToJSON();]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="QuerySuperheat"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[// result: INFOTABLE dataShape: "QueryBathTemperature"
+var QuerySuperheat =  Things["PostgreSQL"].QuerySuperheat();
+
+var result = QuerySuperheat.ToJSON();]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="RemoveSelectedItem"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[var i=0;
+for(;i<input.length;i++){
+       me.selectedItem.Delete(input.rows[i]);
+}]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="Resistance"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[var params = {
+    infoTableName : "Resistance",
+    dataShapeName : "ResistanceDataShape"
+};
+
+var Resistance = Resources["InfoTableFunctions"].CreateInfoTableFromDataShape(params);
+
+Resistance.RemoveAllRows();
+var newRow = new Object();
+newRow.ResistanceData = "AAA";
+newRow.microOhms = "5.60";
+newRow.VoltsEquivalentAtKa="1.6444";
+var newRow1 = new Object();
+newRow1.ResistanceData = "BBB";
+newRow1.microOhms = "5.60";
+newRow1.VoltsEquivalentAtKa="1.6444";
+Resistance.AddRow(newRow);
+Resistance.AddRow(newRow1);
+result=Resistance;
+//result=Resistance.AddRow(newRow);
+
+
+
+]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="SelectItemSortDown"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[
+if(input.rows.length == 1) {
+ 
+
+    var find = input.rows[0].select;
+	var i = 0;
+    for( ; i < me.selectedItem.rows.length; i++) {
+        if(find == me.selectedItem.rows[i].select)
+            break;
+    }
+    if( i < me.selectedItem.rows.length-1 && i != me.selectedItem.rows.length) {
+        var temp = me.selectedItem.rows[i].select;
+        var next = me.selectedItem.rows[i+1].select;
+        //var temp = find.select;
+
+        me.selectedItem.rows[i].select = next;
+        me.selectedItem.rows[i+1].select = temp ;
+    }
+}
+var result = i;]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="SelectItemSortUp"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[
+if(input.rows.length == 1) {
+ 
+
+    var find = input.rows[0].select;
+	var i = 0;
+    for( ; i < me.selectedItem.rows.length; i++) {
+        if(find == me.selectedItem.rows[i].select)
+            break;
+    }
+    if( i != 0 && i != me.selectedItem.rows.length) {
+        var temp = me.selectedItem.rows[i].select;
+        var  last= me.selectedItem.rows[i-1].select;
+        //var temp = find.select;
+
+        me.selectedItem.rows[i].select = last;
+        me.selectedItem.rows[i-1].select = temp;
+    }
+}
+var result = i;
+
+
+
+
+// var result= me.selectedItem.Find(input);
+//result=input.rows[0].select;
+
+
+]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="SetUpMaximumAndMinimum"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[me.MaximumForChart=Maximum;
+me.MinimumForChart=Minimum;]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="Test0406"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[// result: INFOTABLE dataShape: "QueryBathTemperature"
+var BathTemperature1 =  Things["PostgreSQL"].QueryBathTemperature1();
+
+var result = BathTemperature1.data;]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="TestDropDownWithIcon"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[var params = {
+    infoTableName : "Infotable",
+    dataShapeName : "testWithIcon"
+};
+
+var dropdown = Resources["InfoTableFunctions"].CreateInfoTableFromDataShape(params);
+
+//dropdown.RemoveAllRows();
+//var newRow = new Object();
+//var newRow1 = new Object();
+//var newRow2 = new Object();
+//var newRow3 = new Object();
+//var newRow4 = new Object();
+//newRow.select = "Status";
+//newRow1.select="Statistics";
+//newRow2.select="Nodify Parameters";
+//newRow3.select="Trace & Graph";
+//newRow4.select="Cancel";
+// result: IMAGE
+var damper =  MediaEntities["Damper"].GetImage();
+// result: IMAGE
+var Priority1Icon =  MediaEntities["Priority1Icon"].GetImage();
+// result: IMAGE
+var PerformanceMetricsIcon =  MediaEntities["PerformanceMetricsIcon"].GetImage();
+// result: IMAGE
+var ThingsIcon =  MediaEntities["ThingsIcon"].GetImage();
+
+
+// Avatar: IMAGE
+var ThingsIconAvatar =  MediaEntities["ThingsIcon"].GetAvatar();
+// result: IMAGELINK
+var Priority1IconURL =  MediaEntities["Priority1Icon"].GetAvatarURL();
+dropdown.AddRow({icon:Priority1Icon,select:"Status"});
+dropdown.AddRow({icon:PerformanceMetricsIcon,select: "Statistics"});
+dropdown.AddRow({icon:ThingsIcon,select: "Nodify Parameters"});
+dropdown.AddRow({icon:damper,select: "Trace & Graph"});
+dropdown.AddRow({icon:damper,select: "Cancel"});
+result=dropdown.toJSON();]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="TimeSeriesChart"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[var result =  Resources["CSVParser"].ReadCSVFile({
+	delimiter: "," /* STRING */,
+	fileRepository: "SampleData" /* THINGNAME */,
+	filePath: "1008-1138_1.csv" /* STRING */
+});
+
+]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="visibleTrue"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[if(me.visible==false){
+me.visible=true;
+    result=true;
+}else if(me.visible==true){
+    me.visible=false;
+    result=false;
+}
+
+]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="visibletrue2"><ConfigurationTables><ConfigurationTable description="" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[if(me.visible2==false){
+me.visible2=true;
+    result=true;
+}else if(me.visible2==true){
+    me.visible2=false;
+    result=false;
+}
+]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation></ServiceImplementations><Subscriptions/></ThingShape><PropertyBindings/><RemotePropertyBindings/><RemoteServiceBindings/><RemoteEventBindings/><AlertConfigurations><AlertDefinitions name="MaximumForChart"/><AlertDefinitions name="MinimumForChart"/><AlertDefinitions name="selectedItem"/><AlertDefinitions name="TimeNow"/><AlertDefinitions name="visible"/><AlertDefinitions name="visible2"/></AlertConfigurations><ImplementedShapes/><ThingProperties><MinimumForChart><Value>0.0</Value><Timestamp>1970-01-01T00:00:00.000Z</Timestamp><Quality>UNKNOWN</Quality></MinimumForChart><MaximumForChart><Value>0.0</Value><Timestamp>1970-01-01T00:00:00.000Z</Timestamp><Quality>UNKNOWN</Quality></MaximumForChart><selectedItem><Value><infoTable><DataShape><FieldDefinitions><FieldDefinition aspect.isPrimaryKey="true" baseType="STRING" description="" name="select" ordinal="1"/></FieldDefinitions></DataShape><Rows/></infoTable></Value><Timestamp>2020-10-24T07:09:47.177Z</Timestamp><Quality>GOOD</Quality></selectedItem><TimeNow><Value><![CDATA[15:47:33]]></Value><Timestamp>2020-03-11T07:47:33.799Z</Timestamp><Quality>GOOD</Quality></TimeNow></ThingProperties><ConfigurationChanges><ConfigurationChange changeAction="CREATE" changeReason="" timestamp="2020-04-28T09:02:55.691Z" user="Administrator"/></ConfigurationChanges></Thing></Things></Entities>
